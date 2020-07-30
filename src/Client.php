@@ -6,16 +6,31 @@ use GuzzleHttp\HandlerStack;
 use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
 use ReflectionClass;
+use think\api\request\CalendarDay;
+use think\api\request\CalendarMonth;
+use think\api\request\CalendarYear;
+use think\api\request\IdcardIndex;
+use think\api\request\IdcardQuery;
+use think\api\request\TelecomQuery;
+use think\api\request\Verifybankcard3Query;
+use think\api\request\Verifybankcard4Query;
 
 /**
  * Class Client
  * @package think\api
+ *
+ * @method IdcardQuery idcardQuery()
+ * @method IdcardIndex idcardIndex()
+ * @method TelecomQuery telecomQuery()
+ * @method CalendarDay calendarDay()
+ * @method CalendarMonth calendarMonth()
+ * @method CalendarYear calendarYear()
+ * @method Verifybankcard3Query verifybankcard3Query()
+ * @method Verifybankcard4Query verifybankcard4Query()
  */
-abstract class Client
+class Client
 {
-    protected $endpoint = "https://api.topthink.com";
-
-    protected $baseUri;
+    protected $endpoint = "https://api.topthink.com/";
 
     protected $appCode;
 
@@ -36,7 +51,7 @@ abstract class Client
         return $this->parseResponse($response);
     }
 
-    public function parseResponse(ResponseInterface $response)
+    protected function parseResponse(ResponseInterface $response)
     {
         $result = $response->getBody()->getContents();
 
@@ -47,10 +62,10 @@ abstract class Client
         return $result;
     }
 
-    public function createHttpClient()
+    protected function createHttpClient()
     {
         return new \GuzzleHttp\Client([
-            'base_uri' => $this->endpoint . $this->baseUri,
+            'base_uri' => $this->endpoint,
             'handler'  => $this->handleStack,
             'headers'  => [
                 'Authorization' => "AppCode {$this->appCode}",
@@ -64,7 +79,7 @@ abstract class Client
     {
         $refClass  = new ReflectionClass($this);
         $className = ucfirst($method);
-        return "{$refClass->getNamespaceName()}\\$className";
+        return "{$refClass->getNamespaceName()}\\request\\$className";
     }
 
     public function __call($method, $params)

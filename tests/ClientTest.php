@@ -3,13 +3,13 @@
 namespace think\tests;
 
 use PHPUnit\Framework\TestCase;
-use think\api\juhe\Client as JuheClient;
+use think\api\Client;
 
-class JuheClientTest extends TestCase
+class ClientTest extends TestCase
 {
     public function testApi()
     {
-        $client = new JuheClient('AppCode');
+        $client = new Client('AppCode');
 
         $result = $client->calendarMonth()
             ->withYearMonth('2015-1')

@@ -11,9 +11,9 @@ composer require topthink/think-api
 
 下面以查询身份证所属地区接口为例
 ```php
-use think\api\juhe\Client as JuheClient;
+use think\api\Client;
 
-$client = new JuheClient("YourAppCode");
+$client = new Client("YourAppCode");
 
 $result = $client->idcardIndex()
             ->withCardno('身份证号码')

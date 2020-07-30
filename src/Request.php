@@ -62,15 +62,10 @@ abstract class Request
         }
     }
 
-    protected function getParameter($parameter)
-    {
-        return Str::snake($parameter, '-');
-    }
-
     public function __call($name, $arguments)
     {
         if (strncmp($name, 'with', 4) === 0) {
-            $parameter = $this->getParameter(mb_strcut($name, 4));
+            $parameter = Str::camel(mb_strcut($name, 4));
 
             $value = $this->getCallArguments($name, $arguments);
 
