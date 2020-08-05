@@ -9,4 +9,5 @@ use think\api\Request;
  */
 class EnterpriseDetailInfo extends Request
 {
+	public $uri = 'enterprise/detail_info';
 }

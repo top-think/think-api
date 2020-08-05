@@ -10,4 +10,5 @@ use think\api\Request;
  */
 class UnnBatchUcheck extends Request
 {
+	public $uri = 'unn/batch_ucheck';
 }
