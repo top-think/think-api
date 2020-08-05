@@ -5,8 +5,8 @@ namespace think\api\request;
 use think\api\Request;
 
 /**
- * @method $this withCardno($value)
+ * @method $this withEId($value)
  */
-class IdcardIndex extends Request
+class TodayDetail extends Request
 {
 }

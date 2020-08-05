@@ -2,94 +2,75 @@
 
 namespace think\api;
 
-use GuzzleHttp\HandlerStack;
-use InvalidArgumentException;
-use Psr\Http\Message\ResponseInterface;
-use ReflectionClass;
+use think\api\concerns\InteractsWithHttp;
+use think\api\request\BarcodeQuery;
 use think\api\request\CalendarDay;
 use think\api\request\CalendarMonth;
 use think\api\request\CalendarYear;
+use think\api\request\ChengyuQuery;
+use think\api\request\ConstellationQuery;
+use think\api\request\ConvertCharset;
+use think\api\request\EnterpriseDetailInfo;
+use think\api\request\ExchangeConvert;
+use think\api\request\ExchangeCurrency;
+use think\api\request\ExchangeQuery;
+use think\api\request\ExpIndex;
 use think\api\request\IdcardIndex;
 use think\api\request\IdcardQuery;
+use think\api\request\IpIndex;
+use think\api\request\JokeLatest;
+use think\api\request\JokeQuery;
+use think\api\request\JokeRand;
+use think\api\request\NewsToutiao;
+use think\api\request\OcrIdcard;
+use think\api\request\QrcodeIndex;
+use think\api\request\TelecomDetail;
+use think\api\request\TelecomLocation;
 use think\api\request\TelecomQuery;
+use think\api\request\TodayDetail;
+use think\api\request\TodayEvent;
+use think\api\request\UnnBatchUcheck;
 use think\api\request\Verifybankcard3Query;
 use think\api\request\Verifybankcard4Query;
+use think\api\request\WeatherCityList;
+use think\api\request\WeatherQuery;
+use think\api\request\WeatherWids;
 
 /**
- * Class Client
- * @package think\api
- *
- * @method IdcardQuery idcardQuery()
- * @method IdcardIndex idcardIndex()
- * @method TelecomQuery telecomQuery()
+ * @method BarcodeQuery barcodeQuery()
  * @method CalendarDay calendarDay()
  * @method CalendarMonth calendarMonth()
  * @method CalendarYear calendarYear()
+ * @method ChengyuQuery chengyuQuery()
+ * @method ConstellationQuery constellationQuery()
+ * @method ConvertCharset convertCharset()
+ * @method EnterpriseDetailInfo enterpriseDetailInfo()
+ * @method ExchangeQuery exchangeQuery()
+ * @method ExchangeCurrency exchangeCurrency()
+ * @method ExchangeConvert exchangeConvert()
+ * @method ExpIndex expIndex()
+ * @method IdcardQuery idcardQuery()
+ * @method IdcardIndex idcardIndex()
+ * @method IpIndex ipIndex()
+ * @method JokeQuery jokeQuery()
+ * @method JokeLatest jokeLatest()
+ * @method JokeRand jokeRand()
+ * @method NewsToutiao newsToutiao()
+ * @method OcrIdcard ocrIdcard()
+ * @method QrcodeIndex qrcodeIndex()
+ * @method TelecomQuery telecomQuery()
+ * @method TelecomDetail telecomDetail()
+ * @method TelecomLocation telecomLocation()
+ * @method TodayEvent todayEvent()
+ * @method TodayDetail todayDetail()
+ * @method UnnBatchUcheck unnBatchUcheck()
  * @method Verifybankcard3Query verifybankcard3Query()
  * @method Verifybankcard4Query verifybankcard4Query()
+ * @method WeatherQuery weatherQuery()
+ * @method WeatherWids weatherWids()
+ * @method WeatherCityList weatherCityList()
  */
 class Client
 {
-    protected $endpoint = "https://api.topthink.com/";
-
-    protected $appCode;
-
-    protected $handleStack;
-
-    public function __construct($appCode, $handler = null)
-    {
-        $this->appCode     = $appCode;
-        $this->handleStack = HandlerStack::create($handler);
-    }
-
-    public function request(string $method, $uri = '', array $options = [])
-    {
-        $client = $this->createHttpClient();
-
-        $response = $client->request($method, $uri, $options);
-
-        return $this->parseResponse($response);
-    }
-
-    protected function parseResponse(ResponseInterface $response)
-    {
-        $result = $response->getBody()->getContents();
-
-        if (false !== strpos($response->getHeaderLine('Content-Type'), 'application/json')) {
-            $result = json_decode($result, true);
-        }
-
-        return $result;
-    }
-
-    protected function createHttpClient()
-    {
-        return new \GuzzleHttp\Client([
-            'base_uri' => $this->endpoint,
-            'handler'  => $this->handleStack,
-            'headers'  => [
-                'Authorization' => "AppCode {$this->appCode}",
-                'User-Agent'    => "ThinkApi/1.0",
-            ],
-            'verify'   => false,
-        ]);
-    }
-
-    protected function getRequestClass($method)
-    {
-        $refClass  = new ReflectionClass($this);
-        $className = ucfirst($method);
-        return "{$refClass->getNamespaceName()}\\request\\$className";
-    }
-
-    public function __call($method, $params)
-    {
-        $reqClass = $this->getRequestClass($method);
-
-        if (class_exists($reqClass)) {
-            return new $reqClass($this, ...$params);
-        }
-
-        throw new InvalidArgumentException("Api {$method} not found!");
-    }
+	use InteractsWithHttp;
 }

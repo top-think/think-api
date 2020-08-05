@@ -13,5 +13,4 @@ use think\api\Request;
  */
 class Verifybankcard3Query extends Request
 {
-
 }

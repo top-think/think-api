@@ -9,5 +9,4 @@ use think\api\Request;
  */
 class CalendarYear extends Request
 {
-
 }
