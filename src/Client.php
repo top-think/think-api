@@ -20,7 +20,12 @@ use think\api\request\ExchangeConvert;
 use think\api\request\ExchangeCurrency;
 use think\api\request\ExchangeQuery;
 use think\api\request\ExpIndex;
+use think\api\request\ExpressAsyc;
+use think\api\request\ExpressCompany;
+use think\api\request\ExpressDot;
+use think\api\request\ExpressExpList;
 use think\api\request\ExpressQuery;
+use think\api\request\ExpressSync;
 use think\api\request\IdcardAuth;
 use think\api\request\IdcardIndex;
 use think\api\request\IdcardQuery;
@@ -30,6 +35,10 @@ use think\api\request\IpIndex;
 use think\api\request\JokeLatest;
 use think\api\request\JokeQuery;
 use think\api\request\JokeRand;
+use think\api\request\LuozNewEnergy;
+use think\api\request\LuozQuery;
+use think\api\request\LuozSupport;
+use think\api\request\LuozTimes;
 use think\api\request\NewsToutiao;
 use think\api\request\OcrBankcard;
 use think\api\request\OcrBusinessLicense;
@@ -51,9 +60,20 @@ use think\api\request\UnnBatchUcheck;
 use think\api\request\UnnStatus;
 use think\api\request\Verifybankcard3Query;
 use think\api\request\Verifybankcard4Query;
+use think\api\request\WeatherArea;
+use think\api\request\WeatherAreaForecast15;
+use think\api\request\WeatherAreaForecast24;
+use think\api\request\WeatherAreaForecast40;
+use think\api\request\WeatherAreaForecast7;
+use think\api\request\WeatherAreaHistory;
+use think\api\request\WeatherAreaId;
 use think\api\request\WeatherCityList;
+use think\api\request\WeatherCoords;
+use think\api\request\WeatherIp;
 use think\api\request\WeatherQuery;
+use think\api\request\WeatherScenic;
 use think\api\request\WeatherWids;
+use think\api\request\WeatherZip;
 use think\api\request\WoolWcheck;
 use think\api\request\WoolWtag;
 
@@ -76,6 +96,11 @@ use think\api\request\WoolWtag;
  * @method ExchangeConvert exchangeConvert()
  * @method ExpIndex expIndex()
  * @method ExpressQuery expressQuery()
+ * @method ExpressSync expressSync()
+ * @method ExpressAsyc expressAsyc()
+ * @method ExpressCompany expressCompany()
+ * @method ExpressExpList expressExpList()
+ * @method ExpressDot expressDot()
  * @method IdcardQuery idcardQuery()
  * @method IdcardIndex idcardIndex()
  * @method IdcardAuth idcardAuth()
@@ -85,6 +110,10 @@ use think\api\request\WoolWtag;
  * @method JokeQuery jokeQuery()
  * @method JokeLatest jokeLatest()
  * @method JokeRand jokeRand()
+ * @method LuozQuery luozQuery()
+ * @method LuozSupport luozSupport()
+ * @method LuozTimes luozTimes()
+ * @method LuozNewEnergy luozNewEnergy()
  * @method NewsToutiao newsToutiao()
  * @method OcrIdcard ocrIdcard()
  * @method OcrIdOcr ocrIdOcr()
@@ -106,6 +135,17 @@ use think\api\request\WoolWtag;
  * @method UnnStatus unnStatus()
  * @method Verifybankcard3Query verifybankcard3Query()
  * @method Verifybankcard4Query verifybankcard4Query()
+ * @method WeatherCoords weatherCoords()
+ * @method WeatherIp weatherIp()
+ * @method WeatherArea weatherArea()
+ * @method WeatherAreaForecast24 weatherAreaForecast24()
+ * @method WeatherAreaForecast7 weatherAreaForecast7()
+ * @method WeatherAreaForecast15 weatherAreaForecast15()
+ * @method WeatherAreaForecast40 weatherAreaForecast40()
+ * @method WeatherAreaHistory weatherAreaHistory()
+ * @method WeatherScenic weatherScenic()
+ * @method WeatherZip weatherZip()
+ * @method WeatherAreaId weatherAreaId()
  * @method WeatherQuery weatherQuery()
  * @method WeatherWids weatherWids()
  * @method WeatherCityList weatherCityList()
