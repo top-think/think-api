@@ -22,6 +22,7 @@ use think\api\request\CarBrand;
 use think\api\request\CarModels;
 use think\api\request\CarObd;
 use think\api\request\CarSeries;
+use think\api\request\CharConvert;
 use think\api\request\ChengyuQuery;
 use think\api\request\ConstellationMatch;
 use think\api\request\ConstellationQuery;
@@ -69,9 +70,9 @@ use think\api\request\OcrBankcard;
 use think\api\request\OcrBusinessLicense;
 use think\api\request\OcrDrivingLicense;
 use think\api\request\OcrHand;
+use think\api\request\OcrIdcard;
 use think\api\request\OcrIdCardText;
 use think\api\request\OcrIdOcr;
-use think\api\request\OcrIdcard;
 use think\api\request\OcrInvoice;
 use think\api\request\OcrPassport;
 use think\api\request\OcrVehicleLicense;
@@ -93,10 +94,10 @@ use think\api\request\UnnStatus;
 use think\api\request\Verifybankcard3Query;
 use think\api\request\Verifybankcard4Query;
 use think\api\request\WeatherArea;
+use think\api\request\WeatherAreaForecast7;
 use think\api\request\WeatherAreaForecast15;
 use think\api\request\WeatherAreaForecast24;
 use think\api\request\WeatherAreaForecast40;
-use think\api\request\WeatherAreaForecast7;
 use think\api\request\WeatherAreaHistory;
 use think\api\request\WeatherAreaId;
 use think\api\request\WeatherCityList;
@@ -136,6 +137,7 @@ use think\api\request\XinhuaResemble;
  * @method CarSeries carSeries()
  * @method CarModels carModels()
  * @method CarObd carObd()
+ * @method CharConvert charConvert()
  * @method ChengyuQuery chengyuQuery()
  * @method ConstellationQuery constellationQuery()
  * @method ConstellationMatch constellationMatch()
@@ -232,5 +234,5 @@ use think\api\request\XinhuaResemble;
  */
 class Client
 {
-	use InteractsWithHttp;
+    use InteractsWithHttp;
 }
