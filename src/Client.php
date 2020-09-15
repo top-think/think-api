@@ -44,7 +44,6 @@ use think\api\request\ExpressCompany;
 use think\api\request\ExpressDot;
 use think\api\request\ExpressExpList;
 use think\api\request\ExpressQuery;
-use think\api\request\ExpressSync;
 use think\api\request\GoldBank;
 use think\api\request\GoldFuture;
 use think\api\request\GoldQuery;
