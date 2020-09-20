@@ -91,17 +91,15 @@ use think\api\request\LuozTimes;
 use think\api\request\MedicineIndex;
 use think\api\request\MedicineSearch;
 use think\api\request\MoneyConvert;
-use think\api\request\NewsDouyin;
 use think\api\request\NewsHot;
 use think\api\request\NewsToutiao;
-use think\api\request\NewsWeibo;
 use think\api\request\OcrBankcard;
 use think\api\request\OcrBusinessLicense;
 use think\api\request\OcrDrivingLicense;
 use think\api\request\OcrHand;
+use think\api\request\OcrIdcard;
 use think\api\request\OcrIdCardText;
 use think\api\request\OcrIdOcr;
-use think\api\request\OcrIdcard;
 use think\api\request\OcrInvoice;
 use think\api\request\OcrPassport;
 use think\api\request\OcrVehicleLicense;
@@ -132,10 +130,10 @@ use think\api\request\UnnStatus;
 use think\api\request\Verifybankcard3Query;
 use think\api\request\Verifybankcard4Query;
 use think\api\request\WeatherArea;
+use think\api\request\WeatherAreaForecast7;
 use think\api\request\WeatherAreaForecast15;
 use think\api\request\WeatherAreaForecast24;
 use think\api\request\WeatherAreaForecast40;
-use think\api\request\WeatherAreaForecast7;
 use think\api\request\WeatherAreaHistory;
 use think\api\request\WeatherAreaId;
 use think\api\request\WeatherCityList;
@@ -346,5 +344,5 @@ use think\api\request\XinhuaResemble;
  */
 class Client
 {
-	use InteractsWithHttp;
+    use InteractsWithHttp;
 }
