@@ -8,7 +8,7 @@
         }
     ],
     "require": {
-        "guzzlehttp/guzzle": "^7.0 || ^6.5",
+        "guzzlehttp/guzzle": "^6.5 || ^7.0",
         "topthink/think-helper": "^3.1"
     },
     "require-dev": {
