@@ -96,12 +96,14 @@ use think\api\request\NewsToutiao;
 use think\api\request\OcrBankcard;
 use think\api\request\OcrBusinessLicense;
 use think\api\request\OcrDrivingLicense;
+use think\api\request\OcrFace;
 use think\api\request\OcrHand;
 use think\api\request\OcrIdcard;
 use think\api\request\OcrIdCardText;
 use think\api\request\OcrIdOcr;
 use think\api\request\OcrInvoice;
 use think\api\request\OcrPassport;
+use think\api\request\OcrTxt;
 use think\api\request\OcrVehicleLicense;
 use think\api\request\OilQuery;
 use think\api\request\PetIndex;
@@ -109,6 +111,7 @@ use think\api\request\PostcodePcd;
 use think\api\request\PostcodeQuery;
 use think\api\request\PostcodeSearch;
 use think\api\request\PostcodeZone;
+use think\api\request\QrcodeCodec;
 use think\api\request\QrcodeIndex;
 use think\api\request\RumourIndex;
 use think\api\request\StarIndex;
@@ -143,15 +146,19 @@ use think\api\request\WeatherQuery;
 use think\api\request\WeatherScenic;
 use think\api\request\WeatherWids;
 use think\api\request\WeatherZip;
+use think\api\request\WebsiteAntispam;
 use think\api\request\WebsiteBeian;
 use think\api\request\WebsiteCheatip;
 use think\api\request\WebsiteCheatlink;
+use think\api\request\WebsiteImgcensor;
 use think\api\request\WebsiteQq;
 use think\api\request\WechatCheck;
 use think\api\request\WechatChoice;
 use think\api\request\WechatLink;
 use think\api\request\WechatRead;
 use think\api\request\WechatSearch;
+use think\api\request\WikiDoggerel;
+use think\api\request\WikiGodreply;
 use think\api\request\WikiHotword;
 use think\api\request\WikiIndex;
 use think\api\request\WikiLantern;
@@ -159,6 +166,7 @@ use think\api\request\WikiRiddle;
 use think\api\request\WikiStory;
 use think\api\request\WikiTiku;
 use think\api\request\WikiTongue;
+use think\api\request\WikiXiehou;
 use think\api\request\WoolWcheck;
 use think\api\request\WoolWtag;
 use think\api\request\WordSegment;
@@ -273,6 +281,8 @@ use think\api\request\XinhuaResemble;
  * @method OcrPassport ocrPassport()
  * @method OcrInvoice ocrInvoice()
  * @method OcrHand ocrHand()
+ * @method OcrFace ocrFace()
+ * @method OcrTxt ocrTxt()
  * @method OcrIdCardText ocrIdCardText()
  * @method OilQuery oilQuery()
  * @method PetIndex petIndex()
@@ -281,6 +291,7 @@ use think\api\request\XinhuaResemble;
  * @method PostcodePcd postcodePcd()
  * @method PostcodeZone postcodeZone()
  * @method QrcodeIndex qrcodeIndex()
+ * @method QrcodeCodec qrcodeCodec()
  * @method RumourIndex rumourIndex()
  * @method StarIndex starIndex()
  * @method SurnameIndex surnameIndex()
@@ -316,6 +327,8 @@ use think\api\request\XinhuaResemble;
  * @method WeatherCityList weatherCityList()
  * @method WebsiteBeian websiteBeian()
  * @method WebsiteQq websiteQq()
+ * @method WebsiteAntispam websiteAntispam()
+ * @method WebsiteImgcensor websiteImgcensor()
  * @method WebsiteCheatlink websiteCheatlink()
  * @method WebsiteCheatip websiteCheatip()
  * @method WechatChoice wechatChoice()
@@ -330,6 +343,9 @@ use think\api\request\XinhuaResemble;
  * @method WikiStory wikiStory()
  * @method WikiTongue wikiTongue()
  * @method WikiHotword wikiHotword()
+ * @method WikiGodreply wikiGodreply()
+ * @method WikiXiehou wikiXiehou()
+ * @method WikiDoggerel wikiDoggerel()
  * @method WoolWcheck woolWcheck()
  * @method WoolWtag woolWtag()
  * @method WordSegment wordSegment()
