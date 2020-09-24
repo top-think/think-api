@@ -152,6 +152,7 @@ use think\api\request\WebsiteCheatip;
 use think\api\request\WebsiteCheatlink;
 use think\api\request\WebsiteImgcensor;
 use think\api\request\WebsiteQq;
+use think\api\request\WebsiteShorturl;
 use think\api\request\WechatCheck;
 use think\api\request\WechatChoice;
 use think\api\request\WechatLink;
@@ -327,6 +328,7 @@ use think\api\request\XinhuaResemble;
  * @method WeatherCityList weatherCityList()
  * @method WebsiteBeian websiteBeian()
  * @method WebsiteQq websiteQq()
+ * @method WebsiteShorturl websiteShorturl()
  * @method WebsiteAntispam websiteAntispam()
  * @method WebsiteImgcensor websiteImgcensor()
  * @method WebsiteCheatlink websiteCheatlink()
