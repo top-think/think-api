@@ -128,6 +128,7 @@ use think\api\request\TimeWorld;
 use think\api\request\TodayDetail;
 use think\api\request\TodayEvent;
 use think\api\request\TrashIndex;
+use think\api\request\TulingIndex;
 use think\api\request\UnnBatchUcheck;
 use think\api\request\UnnStatus;
 use think\api\request\Verifybankcard3Query;
@@ -312,6 +313,7 @@ use think\api\request\XinhuaResemble;
  * @method TodayEvent todayEvent()
  * @method TodayDetail todayDetail()
  * @method TrashIndex trashIndex()
+ * @method TulingIndex tulingIndex()
  * @method UnnBatchUcheck unnBatchUcheck()
  * @method UnnStatus unnStatus()
  * @method Verifybankcard3Query verifybankcard3Query()
