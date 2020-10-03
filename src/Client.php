@@ -158,6 +158,7 @@ use think\api\request\WebsiteIp;
 use think\api\request\WebsiteIpv6;
 use think\api\request\WebsiteQq;
 use think\api\request\WebsiteShorturl;
+use think\api\request\WebsiteWabeian;
 use think\api\request\WechatCheck;
 use think\api\request\WechatChoice;
 use think\api\request\WechatLink;
@@ -333,6 +334,7 @@ use think\api\request\XinhuaResemble;
  * @method WeatherWids weatherWids()
  * @method WeatherCityList weatherCityList()
  * @method WebsiteBeian websiteBeian()
+ * @method WebsiteWabeian websiteWabeian()
  * @method WebsiteQq websiteQq()
  * @method WebsiteHttps websiteHttps()
  * @method WebsiteIpv6 websiteIpv6()
