@@ -148,6 +148,7 @@ use think\api\request\WeatherScenic;
 use think\api\request\WeatherWids;
 use think\api\request\WeatherZip;
 use think\api\request\WebsiteAntispam;
+use think\api\request\WebsiteBaidu;
 use think\api\request\WebsiteBeian;
 use think\api\request\WebsiteCheatip;
 use think\api\request\WebsiteCheatlink;
@@ -158,6 +159,8 @@ use think\api\request\WebsiteIp;
 use think\api\request\WebsiteIpv6;
 use think\api\request\WebsiteQq;
 use think\api\request\WebsiteShorturl;
+use think\api\request\WebsiteSo;
+use think\api\request\WebsiteSogou;
 use think\api\request\WebsiteWabeian;
 use think\api\request\WechatCheck;
 use think\api\request\WechatChoice;
@@ -334,6 +337,9 @@ use think\api\request\XinhuaResemble;
  * @method WeatherWids weatherWids()
  * @method WeatherCityList weatherCityList()
  * @method WebsiteBeian websiteBeian()
+ * @method WebsiteBaidu websiteBaidu()
+ * @method WebsiteSogou websiteSogou()
+ * @method WebsiteSo websiteSo()
  * @method WebsiteWabeian websiteWabeian()
  * @method WebsiteQq websiteQq()
  * @method WebsiteHttps websiteHttps()
