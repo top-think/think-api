@@ -68,6 +68,7 @@ use think\api\request\IdcardQuery;
 use think\api\request\ImageGifDetect;
 use think\api\request\ImageImgCensor;
 use think\api\request\IpIndex;
+use think\api\request\JdDetail;
 use think\api\request\JokeLatest;
 use think\api\request\JokeQuery;
 use think\api\request\JokeRand;
@@ -255,6 +256,7 @@ use think\api\request\XinhuaResemble;
  * @method ImageImgCensor imageImgCensor()
  * @method ImageGifDetect imageGifDetect()
  * @method IpIndex ipIndex()
+ * @method JdDetail jdDetail()
  * @method JokeQuery jokeQuery()
  * @method JokeLatest jokeLatest()
  * @method JokeRand jokeRand()
