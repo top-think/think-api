@@ -117,7 +117,12 @@ use think\api\request\QrcodeIndex;
 use think\api\request\RumourIndex;
 use think\api\request\StarIndex;
 use think\api\request\SurnameIndex;
+use think\api\request\TaobaoAlibabaInfo;
 use think\api\request\TaobaoDetail;
+use think\api\request\TaobaoItem;
+use think\api\request\TaobaokeCheckOrder;
+use think\api\request\TaobaokeQuery;
+use think\api\request\TaobaoShop;
 use think\api\request\TelecomCodes;
 use think\api\request\TelecomDetail;
 use think\api\request\TelecomIdentify;
@@ -308,6 +313,11 @@ use think\api\request\XinhuaResemble;
  * @method StarIndex starIndex()
  * @method SurnameIndex surnameIndex()
  * @method TaobaoDetail taobaoDetail()
+ * @method TaobaoItem taobaoItem()
+ * @method TaobaoShop taobaoShop()
+ * @method TaobaoAlibabaInfo taobaoAlibabaInfo()
+ * @method TaobaokeQuery taobaokeQuery()
+ * @method TaobaokeCheckOrder taobaokeCheckOrder()
  * @method TelecomQuery telecomQuery()
  * @method TelecomDetail telecomDetail()
  * @method TelecomLocation telecomLocation()
