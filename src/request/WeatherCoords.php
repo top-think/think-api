@@ -5,6 +5,7 @@ namespace think\api\request;
 use think\api\Request;
 
 /**
+ * @method $this withFrom($value)
  * @method $this withLng($value)
  * @method $this withLat($value)
  * @method $this withNeedMoreDay($value)
