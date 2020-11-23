@@ -4,9 +4,7 @@ namespace think\api\concerns;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
-use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;
-use ReflectionClass;
 
 trait InteractsWithHttp
 {
@@ -22,7 +20,7 @@ trait InteractsWithHttp
         $this->handleStack = HandlerStack::create($handler);
     }
 
-    public function request(string $method, $uri = '', array $options = [])
+    public function request($method, $uri = '', $options = [])
     {
         $client = $this->createHttpClient();
 
@@ -55,21 +53,4 @@ trait InteractsWithHttp
         ]);
     }
 
-    protected function getRequestClass($method)
-    {
-        $refClass  = new ReflectionClass($this);
-        $className = ucfirst($method);
-        return "{$refClass->getNamespaceName()}\\request\\$className";
-    }
-
-    public function __call($method, $params)
-    {
-        $reqClass = $this->getRequestClass($method);
-
-        if (class_exists($reqClass)) {
-            return new $reqClass($this, ...$params);
-        }
-
-        throw new InvalidArgumentException("Api {$method} not found!");
-    }
 }

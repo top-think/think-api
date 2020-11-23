@@ -23,11 +23,11 @@ abstract class Request
 
     public $options = [];
 
-    protected $client;
+    protected $group;
 
-    public function __construct(Client $client)
+    public function __construct(Group $group)
     {
-        $this->client = $client;
+        $this->group = $group;
     }
 
     public function resolveOptions()
@@ -52,7 +52,7 @@ abstract class Request
         $this->resolveUri();
 
         try {
-            return $this->client->request($this->method, $this->uri, $this->options);
+            return $this->group->request($this->method, $this->uri, $this->options);
         } catch (RequestException $e) {
             if ($e->hasResponse()) {
                 $response = $e->getResponse();

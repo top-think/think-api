@@ -9,7 +9,7 @@
     ],
     "require": {
         "guzzlehttp/guzzle": "^6.5 || ^7.0",
-        "topthink/think-helper": "^3.1"
+        "topthink/think-helper": "^1.0 || ^3.1"
     },
     "require-dev": {
         "phpunit/phpunit": "^7.0"
