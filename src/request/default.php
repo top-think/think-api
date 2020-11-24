@@ -45,7 +45,7 @@ class BaiduIndex extends Request
  */
 class BaiduPcRank extends Request
 {
-	public $uri = 'baidu/pc_rank';
+    public $uri = 'baidu/pc_rank';
 }
 
 /**
@@ -54,7 +54,7 @@ class BaiduPcRank extends Request
  */
 class BaiduMobileRank extends Request
 {
-	public $uri = 'baidu/mobile_rank';
+    public $uri = 'baidu/mobile_rank';
 }
 
 /**
@@ -76,7 +76,7 @@ class BaiduPages extends Request
  */
 class BaiduPcUrlPages extends Request
 {
-	public $uri = 'baidu/pc_url_pages';
+    public $uri = 'baidu/pc_url_pages';
 }
 
 /**
@@ -84,7 +84,7 @@ class BaiduPcUrlPages extends Request
  */
 class BaiduMobileUrlPages extends Request
 {
-	public $uri = 'baidu/mobile_url_pages';
+    public $uri = 'baidu/mobile_url_pages';
 }
 
 /**
@@ -92,7 +92,7 @@ class BaiduMobileUrlPages extends Request
  */
 class BaiduPcWeight extends Request
 {
-	public $uri = 'baidu/pc_weight';
+    public $uri = 'baidu/pc_weight';
 }
 
 /**
@@ -100,7 +100,7 @@ class BaiduPcWeight extends Request
  */
 class BaiduMobileWeight extends Request
 {
-	public $uri = 'baidu/mobile_weight';
+    public $uri = 'baidu/mobile_weight';
 }
 
 /**
@@ -116,7 +116,7 @@ class BaiduKeyword extends Request
  */
 class BankcardTwoAuth extends Request
 {
-	public $uri = 'bankcard/two_auth';
+    public $uri = 'bankcard/two_auth';
 }
 
 /**
@@ -126,7 +126,7 @@ class BankcardTwoAuth extends Request
  */
 class BankcardThreeAuth extends Request
 {
-	public $uri = 'bankcard/three_auth';
+    public $uri = 'bankcard/three_auth';
 }
 
 /**
@@ -136,7 +136,7 @@ class BankcardThreeAuth extends Request
  */
 class BankcardThreeAuthDetail extends Request
 {
-	public $uri = 'bankcard/three_auth_detail';
+    public $uri = 'bankcard/three_auth_detail';
 }
 
 /**
@@ -157,7 +157,7 @@ class BankcardAuth extends Request
  */
 class BankcardAuthDetail extends Request
 {
-	public $uri = 'bankcard/auth_detail';
+    public $uri = 'bankcard/auth_detail';
 }
 
 /**
@@ -165,7 +165,7 @@ class BankcardAuthDetail extends Request
  */
 class BankcardAuthSecret extends Request
 {
-	public $uri = 'bankcard/auth_secret';
+    public $uri = 'bankcard/auth_secret';
 }
 
 /**
@@ -209,7 +209,7 @@ class BookIsbn extends Request
  */
 class BrainTeaserIndex extends Request
 {
-	public $uri = 'brain_teaser/index';
+    public $uri = 'brain_teaser/index';
 }
 
 /**
@@ -383,7 +383,7 @@ class EnglishDay extends Request
  */
 class EnterpriseDetailInfo extends Request
 {
-	public $uri = 'enterprise/detail_info';
+    public $uri = 'enterprise/detail_info';
 }
 
 /**
@@ -495,7 +495,7 @@ class ExpressCompany extends Request
  */
 class ExpressExpList extends Request
 {
-	public $uri = 'express/exp_list';
+    public $uri = 'express/exp_list';
 }
 
 /**
@@ -576,7 +576,7 @@ class GoldBank extends Request
  */
 class GstoreMovieByDirector extends Request
 {
-	public $uri = 'gstore/movie_by_director';
+    public $uri = 'gstore/movie_by_director';
 }
 
 /**
@@ -585,7 +585,7 @@ class GstoreMovieByDirector extends Request
  */
 class GstoreMovieByActors extends Request
 {
-	public $uri = 'gstore/movie_by_actors';
+    public $uri = 'gstore/movie_by_actors';
 }
 
 /**
@@ -607,7 +607,7 @@ class GstoreDisease extends Request
  */
 class GstoreTabooFood extends Request
 {
-	public $uri = 'gstore/taboo_food';
+    public $uri = 'gstore/taboo_food';
 }
 
 /**
@@ -666,7 +666,7 @@ class IdcardAuth extends Request
  */
 class ImageImgCensor extends Request
 {
-	public $uri = 'image/img_censor';
+    public $uri = 'image/img_censor';
 }
 
 /**
@@ -674,7 +674,7 @@ class ImageImgCensor extends Request
  */
 class ImageGifDetect extends Request
 {
-	public $uri = 'image/gif_detect';
+    public $uri = 'image/gif_detect';
 }
 
 /**
@@ -839,7 +839,7 @@ class LuozTimes extends Request
  */
 class LuozNewEnergy extends Request
 {
-	public $uri = 'luoz/new_energy';
+    public $uri = 'luoz/new_energy';
 }
 
 /**
@@ -894,7 +894,7 @@ class OcrIdcard extends Request
  */
 class OcrIdOcr extends Request
 {
-	public $uri = 'ocr/id_ocr';
+    public $uri = 'ocr/id_ocr';
 }
 
 /**
@@ -911,7 +911,7 @@ class OcrBankcard extends Request
  */
 class OcrBusinessLicense extends Request
 {
-	public $uri = 'ocr/business_license';
+    public $uri = 'ocr/business_license';
 }
 
 /**
@@ -920,7 +920,7 @@ class OcrBusinessLicense extends Request
  */
 class OcrDrivingLicense extends Request
 {
-	public $uri = 'ocr/driving_license';
+    public $uri = 'ocr/driving_license';
 }
 
 /**
@@ -929,7 +929,7 @@ class OcrDrivingLicense extends Request
  */
 class OcrVehicleLicense extends Request
 {
-	public $uri = 'ocr/vehicle_license';
+    public $uri = 'ocr/vehicle_license';
 }
 
 /**
@@ -964,7 +964,7 @@ class OcrHand extends Request
  */
 class OcrIdCardText extends Request
 {
-	public $uri = 'ocr/id_card_text';
+    public $uri = 'ocr/id_card_text';
 }
 
 /**
@@ -1001,7 +1001,7 @@ class OcrEdu extends Request
  */
 class OcrMaskDetect extends Request
 {
-	public $uri = 'ocr/mask_detect';
+    public $uri = 'ocr/mask_detect';
 }
 
 class OilQuery extends Request
@@ -1118,10 +1118,24 @@ class TaobaoDetail extends Request
 
 /**
  * @method $this withId($value)
+ */
+class TaobaoInfo extends Request
+{
+}
+
+/**
+ * @method $this withId($value)
  * @method $this withInfo($value)
  * @method $this withAreaId($value)
  */
 class TaobaoItem extends Request
+{
+}
+
+/**
+ * @method $this withId($value)
+ */
+class TaobaoImage extends Request
 {
 }
 
@@ -1137,7 +1151,7 @@ class TaobaoShop extends Request
  */
 class TaobaoAlibabaInfo extends Request
 {
-	public $uri = 'taobao/alibaba_info';
+    public $uri = 'taobao/alibaba_info';
 }
 
 /**
@@ -1153,7 +1167,7 @@ class TaobaokeQuery extends Request
  */
 class TaobaokeCheckOrder extends Request
 {
-	public $uri = 'taobaoke/check_order';
+    public $uri = 'taobaoke/check_order';
 }
 
 /**
@@ -1284,7 +1298,7 @@ class TulingIndex extends Request
  */
 class UnnBatchUcheck extends Request
 {
-	public $uri = 'unn/batch_ucheck';
+    public $uri = 'unn/batch_ucheck';
 }
 
 /**
@@ -1363,7 +1377,7 @@ class WeatherArea extends Request
  */
 class WeatherAreaForecast24 extends Request
 {
-	public $uri = 'weather/area_forecast24';
+    public $uri = 'weather/area_forecast24';
 }
 
 /**
@@ -1373,7 +1387,7 @@ class WeatherAreaForecast24 extends Request
  */
 class WeatherAreaForecast7 extends Request
 {
-	public $uri = 'weather/area_forecast7';
+    public $uri = 'weather/area_forecast7';
 }
 
 /**
@@ -1382,7 +1396,7 @@ class WeatherAreaForecast7 extends Request
  */
 class WeatherAreaForecast15 extends Request
 {
-	public $uri = 'weather/area_forecast15';
+    public $uri = 'weather/area_forecast15';
 }
 
 /**
@@ -1391,7 +1405,7 @@ class WeatherAreaForecast15 extends Request
  */
 class WeatherAreaForecast40 extends Request
 {
-	public $uri = 'weather/area_forecast40';
+    public $uri = 'weather/area_forecast40';
 }
 
 /**
@@ -1403,7 +1417,7 @@ class WeatherAreaForecast40 extends Request
  */
 class WeatherAreaHistory extends Request
 {
-	public $uri = 'weather/area_history';
+    public $uri = 'weather/area_history';
 }
 
 /**
@@ -1437,7 +1451,7 @@ class WeatherZip extends Request
  */
 class WeatherAreaId extends Request
 {
-	public $uri = 'weather/area_id';
+    public $uri = 'weather/area_id';
 }
 
 /**
@@ -1453,7 +1467,7 @@ class WeatherWids extends Request
 
 class WeatherCityList extends Request
 {
-	public $uri = 'weather/city_list';
+    public $uri = 'weather/city_list';
 }
 
 /**
@@ -1590,7 +1604,7 @@ class WebsiteWhois extends Request
  */
 class WebsiteWhoisReverse extends Request
 {
-	public $uri = 'website/whois_reverse';
+    public $uri = 'website/whois_reverse';
 }
 
 /**
@@ -1798,7 +1812,7 @@ class XinhuaResemble extends Request
  */
 class XinhuaConvertPy extends Request
 {
-	public $uri = 'xinhua/convert_py';
+    public $uri = 'xinhua/convert_py';
 }
 
 class XnbIndex extends Request
@@ -1949,6 +1963,8 @@ class XnbIndex extends Request
  * @method StarIndex starIndex()
  * @method SurnameIndex surnameIndex()
  * @method TaobaoDetail taobaoDetail()
+ * @method TaobaoInfo taobaoInfo()
+ * @method TaobaoImage taobaoImage()
  * @method TaobaoItem taobaoItem()
  * @method TaobaoShop taobaoShop()
  * @method TaobaoAlibabaInfo taobaoAlibabaInfo()
