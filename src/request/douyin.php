@@ -249,7 +249,7 @@ class VideoFeed extends Request
  */
 class VideoPromotionDetail extends Request
 {
-	public $uri = 'video/promotion_detail';
+    public $uri = 'video/promotion_detail';
 }
 
 /**
@@ -257,47 +257,47 @@ class VideoPromotionDetail extends Request
  */
 class VideoPromotionVideo extends Request
 {
-	public $uri = 'video/promotion_video';
+    public $uri = 'video/promotion_video';
 }
 
 /**
- * @method BoardStar boardStar()
- * @method BoardHot boardHot()
- * @method BoardLive boardLive()
- * @method BoardVideo boardVideo()
- * @method BoardGood boardGood()
- * @method BoardRecommend boardRecommend()
- * @method BoardTag boardTag()
- * @method LiveroomInfo liveroomInfo()
- * @method LiveroomChat liveroomChat()
- * @method LiveroomPromotion liveroomPromotion()
- * @method LiveroomStatus liveroomStatus()
- * @method LiveroomAudience liveroomAudience()
- * @method LiveroomFeed liveroomFeed()
- * @method SearchUser searchUser()
- * @method SearchVideo searchVideo()
- * @method SearchTopic searchTopic()
- * @method SearchPoi searchPoi()
- * @method SearchMusic searchMusic()
- * @method SearchLive searchLive()
- * @method SearchGood searchGood()
- * @method SearchIndex searchIndex()
- * @method TopicDetail topicDetail()
- * @method TopicVideo topicVideo()
- * @method UserInfo userInfo()
- * @method UserVideo userVideo()
- * @method UserFollower userFollower()
- * @method UserLive userLive()
- * @method UserPromotion userPromotion()
- * @method UserFollowing userFollowing()
- * @method UserFavourite userFavourite()
- * @method VideoDetail videoDetail()
- * @method VideoComment videoComment()
- * @method VideoPromotion videoPromotion()
- * @method VideoReply videoReply()
- * @method VideoFeed videoFeed()
- * @method VideoPromotionDetail videoPromotionDetail()
- * @method VideoPromotionVideo videoPromotionVideo()
+ * @method BoardStar boardStar() 明星榜
+ * @method BoardHot boardHot() 热点榜
+ * @method BoardLive boardLive() 直播榜
+ * @method BoardVideo boardVideo() 最热视频榜
+ * @method BoardGood boardGood() 人气好物榜
+ * @method BoardRecommend boardRecommend() 首页视频推荐
+ * @method BoardTag boardTag() 热门话题推荐
+ * @method LiveroomInfo liveroomInfo() 直播间信息
+ * @method LiveroomChat liveroomChat() 直播 送礼、关注、点赞、弹幕
+ * @method LiveroomPromotion liveroomPromotion() 直播带货商品列表
+ * @method LiveroomStatus liveroomStatus() 直播间开播查询
+ * @method LiveroomAudience liveroomAudience() 直播间在线观众
+ * @method LiveroomFeed liveroomFeed() 直播间随机推荐
+ * @method SearchUser searchUser() 关键词搜索用户
+ * @method SearchVideo searchVideo() 关键词搜索视频
+ * @method SearchTopic searchTopic() 关键词搜索话题
+ * @method SearchPoi searchPoi() 关键词搜索地点
+ * @method SearchMusic searchMusic() 关键词搜索音乐
+ * @method SearchLive searchLive() 关键词搜索直播
+ * @method SearchGood searchGood() 关键词搜索商品
+ * @method SearchIndex searchIndex() 关键词综合搜索
+ * @method TopicDetail topicDetail() 话题详情
+ * @method TopicVideo topicVideo() 话题视频列表
+ * @method UserInfo userInfo() 抖音用户信息
+ * @method UserVideo userVideo() 抖音用户视频列表
+ * @method UserFollower userFollower() 抖音用户粉丝列表
+ * @method UserLive userLive() 抖音用户直播信息
+ * @method UserPromotion userPromotion() 抖音用户商品橱窗
+ * @method UserFollowing userFollowing() 抖音用户关注列表
+ * @method UserFavourite userFavourite() 抖音用户收藏列表
+ * @method VideoDetail videoDetail() 视频详情
+ * @method VideoComment videoComment() 视频评论列表
+ * @method VideoPromotion videoPromotion() 视频带货商品列表
+ * @method VideoReply videoReply() 视频评论回复列表
+ * @method VideoFeed videoFeed() 带货视频随机推荐
+ * @method VideoPromotionDetail videoPromotionDetail() 带货商品详情
+ * @method VideoPromotionVideo videoPromotionVideo() 带同款商品视频列表
  */
 trait DouyinRequests
 {

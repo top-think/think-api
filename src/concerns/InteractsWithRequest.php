@@ -10,5 +10,5 @@ use think\api\request\douyin\DouyinRequests;
  */
 trait InteractsWithRequest
 {
-	use DefaultRequests;
+    use DefaultRequests;
 }

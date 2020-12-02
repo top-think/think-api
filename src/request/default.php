@@ -1118,17 +1118,17 @@ class TaobaoDetail extends Request
 
 /**
  * @method $this withId($value)
+ * @method $this withInfo($value)
+ * @method $this withAreaId($value)
  */
-class TaobaoInfo extends Request
+class TaobaoItem extends Request
 {
 }
 
 /**
  * @method $this withId($value)
- * @method $this withInfo($value)
- * @method $this withAreaId($value)
  */
-class TaobaoItem extends Request
+class TaobaoInfo extends Request
 {
 }
 
@@ -1820,237 +1820,237 @@ class XnbIndex extends Request
 }
 
 /**
- * @method AlmanacDate almanacDate()
- * @method AlmanacHour almanacHour()
- * @method AlmanacQq almanacQq()
- * @method AqiSearch aqiSearch()
- * @method BaiduIndex baiduIndex()
- * @method BaiduPcRank baiduPcRank()
- * @method BaiduMobileRank baiduMobileRank()
- * @method BaiduLinks baiduLinks()
- * @method BaiduPages baiduPages()
- * @method BaiduPcUrlPages baiduPcUrlPages()
- * @method BaiduMobileUrlPages baiduMobileUrlPages()
- * @method BaiduPcWeight baiduPcWeight()
- * @method BaiduMobileWeight baiduMobileWeight()
- * @method BaiduKeyword baiduKeyword()
- * @method BankcardTwoAuth bankcardTwoAuth()
- * @method BankcardThreeAuth bankcardThreeAuth()
- * @method BankcardThreeAuthDetail bankcardThreeAuthDetail()
- * @method BankcardAuth bankcardAuth()
- * @method BankcardAuthDetail bankcardAuthDetail()
- * @method BankcardAuthSecret bankcardAuthSecret()
+ * @method AlmanacDate almanacDate() 提供老黄历查询,黄历每日吉凶宜忌查询
+ * @method AlmanacHour almanacHour() 提供老黄历查询,黄历每日吉凶宜忌查询
+ * @method AlmanacQq almanacQq() 根据传入的参数qq号码测试qq的吉凶
+ * @method AqiSearch aqiSearch() 空气质量指数查询
+ * @method BaiduIndex baiduIndex() 关键词百度指数
+ * @method BaiduPcRank baiduPcRank() 关键词百度PC排名
+ * @method BaiduMobileRank baiduMobileRank() 关键词百度移动排名
+ * @method BaiduLinks baiduLinks() 百度反链数
+ * @method BaiduPages baiduPages() 百度收录量
+ * @method BaiduPcUrlPages baiduPcUrlPages() 百度PC-URL收录
+ * @method BaiduMobileUrlPages baiduMobileUrlPages() 百度mobile-URL收录
+ * @method BaiduPcWeight baiduPcWeight() 百度PC权重
+ * @method BaiduMobileWeight baiduMobileWeight() 百度移动权重
+ * @method BaiduKeyword baiduKeyword() 百度关键词收录量
+ * @method BankcardTwoAuth bankcardTwoAuth() 银行卡二要素标准版
+ * @method BankcardThreeAuth bankcardThreeAuth() 银行卡三要素标准版
+ * @method BankcardThreeAuthDetail bankcardThreeAuthDetail() 银行卡三要素详细版
+ * @method BankcardAuth bankcardAuth() 银行卡四要素标准版
+ * @method BankcardAuthDetail bankcardAuthDetail() 银行卡四要素详情版
+ * @method BankcardAuthSecret bankcardAuthSecret() 银行卡四要素加密版
  * @method BarcodeQuery barcodeQuery()
- * @method BmiIndex bmiIndex()
- * @method BookCatalog bookCatalog()
- * @method BookQuery bookQuery()
- * @method BookIsbn bookIsbn()
- * @method BrainTeaserIndex brainTeaserIndex()
+ * @method BmiIndex bmiIndex() bmi查询
+ * @method BookCatalog bookCatalog() 图书分类目录
+ * @method BookQuery bookQuery() 查询图书数据
+ * @method BookIsbn bookIsbn() 查询图书数据
+ * @method BrainTeaserIndex brainTeaserIndex() 脑筋急转弯
  * @method CalendarDay calendarDay()
  * @method CalendarMonth calendarMonth()
  * @method CalendarYear calendarYear()
- * @method CarBrand carBrand()
- * @method CarSeries carSeries()
- * @method CarModels carModels()
- * @method CarObd carObd()
- * @method CarLimit carLimit()
- * @method CarVin carVin()
- * @method CharConvert charConvert()
- * @method ChengyuQuery chengyuQuery()
- * @method ChengyuAllusion chengyuAllusion()
- * @method ChengyuJielong chengyuJielong()
- * @method ChengyuGuess chengyuGuess()
- * @method ConstellationQuery constellationQuery()
- * @method ConstellationMatch constellationMatch()
- * @method ConstellationZodiac constellationZodiac()
- * @method DreamCategory dreamCategory()
- * @method DreamQuery dreamQuery()
- * @method DreamId dreamId()
- * @method DrivingQuery drivingQuery()
- * @method DrivingAnswer drivingAnswer()
- * @method EnglishDay englishDay()
+ * @method CarBrand carBrand() 返回车辆品牌所有列表，或更具中文拼音首字母查询品牌列表
+ * @method CarSeries carSeries() 根据车辆品牌ID查询旗下车系列表
+ * @method CarModels carModels() 根据车系id查询旗下车型列表
+ * @method CarObd carObd() 通过OBD故障码查询相关信息
+ * @method CarLimit carLimit() 尾号限行
+ * @method CarVin carVin() VIN码查询
+ * @method CharConvert charConvert() 转换字符串至简体、繁体、火星文，每次最多支持100个字符
+ * @method ChengyuQuery chengyuQuery() 根据成语查询详细信息，如：详解、同义词、反义词、读音等信息
+ * @method ChengyuAllusion chengyuAllusion() 成语典故
+ * @method ChengyuJielong chengyuJielong() 成语接龙
+ * @method ChengyuGuess chengyuGuess() 猜成语
+ * @method ConstellationQuery constellationQuery() 十二星座的今日运势
+ * @method ConstellationMatch constellationMatch() 查询星座配对
+ * @method ConstellationZodiac constellationZodiac() 查询生肖配对
+ * @method DreamCategory dreamCategory() 梦境类型
+ * @method DreamQuery dreamQuery() 根据梦境中梦到的事物解梦
+ * @method DreamId dreamId() 根据ID查询解梦信息
+ * @method DrivingQuery drivingQuery() 根据输入参数返回相关题目
+ * @method DrivingAnswer drivingAnswer() 返回answer字段对应答案信息
+ * @method EnglishDay englishDay() 每日一句
  * @method EnterpriseDetailInfo enterpriseDetailInfo()
- * @method EnterpriseCopyright enterpriseCopyright()
- * @method EnterpriseCreditcode enterpriseCreditcode()
- * @method EnterpriseTrademark enterpriseTrademark()
- * @method EnterprisePatent enterprisePatent()
- * @method ExchangeQuery exchangeQuery()
- * @method ExchangeCurrency exchangeCurrency()
- * @method ExchangeConvert exchangeConvert()
- * @method ExchangePrice exchangePrice()
- * @method ExchangeFrate exchangeFrate()
+ * @method EnterpriseCopyright enterpriseCopyright() 企业著作权查询
+ * @method EnterpriseCreditcode enterpriseCreditcode() 企业开票信息查询
+ * @method EnterpriseTrademark enterpriseTrademark() 商标信息查询
+ * @method EnterprisePatent enterprisePatent() 专利查询
+ * @method ExchangeQuery exchangeQuery() 常用汇率查询
+ * @method ExchangeCurrency exchangeCurrency() 货币列表
+ * @method ExchangeConvert exchangeConvert() 实时货币汇率查询换算，数据仅供参考，交易时以银行柜台成交价为准
+ * @method ExchangePrice exchangePrice() 100外币兑人民币，更新时间2分钟，此汇率仅供参考
+ * @method ExchangeFrate exchangeFrate() 此汇率仅供参考，更新时间2分钟，以中国银行各分行实际交易汇率为准
  * @method ExpIndex expIndex()
- * @method ExpressQuery expressQuery()
- * @method ExpressAsyc expressAsyc()
- * @method ExpressCompany expressCompany()
- * @method ExpressExpList expressExpList()
- * @method ExpressDot expressDot()
- * @method ExpressAddress expressAddress()
- * @method FanyiIndex fanyiIndex()
- * @method FoodNutrient foodNutrient()
- * @method FoodMenu foodMenu()
- * @method GeoIndex geoIndex()
- * @method GeoConvert geoConvert()
- * @method GoldQuery goldQuery()
- * @method GoldFuture goldFuture()
- * @method GoldBank goldBank()
- * @method GstoreMovieByDirector gstoreMovieByDirector()
- * @method GstoreMovieByActors gstoreMovieByActors()
- * @method GstoreSymptom gstoreSymptom()
- * @method GstoreDisease gstoreDisease()
- * @method GstoreTabooFood gstoreTabooFood()
- * @method HotWeixin hotWeixin()
- * @method HotDouyin hotDouyin()
- * @method HotVideo hotVideo()
- * @method HotWeibo hotWeibo()
+ * @method ExpressQuery expressQuery() 快递物流跟踪（实时）
+ * @method ExpressAsyc expressAsyc() 快递物流跟踪（异步）
+ * @method ExpressCompany expressCompany() 快递单号查询快递公司
+ * @method ExpressExpList expressExpList() 快递公司列表
+ * @method ExpressDot expressDot() 网点查询
+ * @method ExpressAddress expressAddress() 收货信息智能解析
+ * @method FanyiIndex fanyiIndex() 语言翻译
+ * @method FoodNutrient foodNutrient() 食物营养成分表
+ * @method FoodMenu foodMenu() 菜谱查询
+ * @method GeoIndex geoIndex() 经纬度地址解析
+ * @method GeoConvert geoConvert() 支持百度、谷歌、GPS三大经纬度互相转化
+ * @method GoldQuery goldQuery() 上海黄金交易所 2分钟更新一次
+ * @method GoldFuture goldFuture() 上海期货交易所 2分钟更新一次
+ * @method GoldBank goldBank() 纸黄金
+ * @method GstoreMovieByDirector gstoreMovieByDirector() 根据导演查找电影
+ * @method GstoreMovieByActors gstoreMovieByActors() 根据演员查找电影
+ * @method GstoreSymptom gstoreSymptom() 查询某个疾病的所有症状
+ * @method GstoreDisease gstoreDisease() 查询某个症状可能的疾病信息
+ * @method GstoreTabooFood gstoreTabooFood() 查询某个疾病不能吃的食物
+ * @method HotWeixin hotWeixin() 微信热文榜
+ * @method HotDouyin hotDouyin() 抖音热点话题
+ * @method HotVideo hotVideo() 抖音热点视频
+ * @method HotWeibo hotWeibo() 微博热搜榜
  * @method IdcardQuery idcardQuery()
  * @method IdcardIndex idcardIndex()
- * @method IdcardAuth idcardAuth()
- * @method ImageImgCensor imageImgCensor()
- * @method ImageGifDetect imageGifDetect()
+ * @method IdcardAuth idcardAuth() 身份证二要素检测
+ * @method ImageImgCensor imageImgCensor() 组合服务接口
+ * @method ImageGifDetect imageGifDetect() GIF色情图像识别
  * @method IpIndex ipIndex()
- * @method JdDetail jdDetail()
- * @method JokeQuery jokeQuery()
- * @method JokeLatest jokeLatest()
- * @method JokeRand jokeRand()
- * @method LifeTip lifeTip()
- * @method LiteraryPoetry literaryPoetry()
- * @method LiteraryTang literaryTang()
- * @method LiterarySong literarySong()
- * @method LiteraryYuan literaryYuan()
- * @method LiteraryQuote literaryQuote()
- * @method LiteraryMemo literaryMemo()
- * @method LiteraryQuan literaryQuan()
- * @method LiteraryOne literaryOne()
- * @method LotteryTypes lotteryTypes()
- * @method LotteryQuery lotteryQuery()
- * @method LotteryBonus lotteryBonus()
- * @method LotteryHistory lotteryHistory()
- * @method LuozQuery luozQuery()
- * @method LuozSupport luozSupport()
- * @method LuozTimes luozTimes()
- * @method LuozNewEnergy luozNewEnergy()
- * @method MedicineIndex medicineIndex()
- * @method MedicineSearch medicineSearch()
- * @method MoneyConvert moneyConvert()
+ * @method JdDetail jdDetail() 京东商品信息
+ * @method JokeQuery jokeQuery() 根据时间戳返回该时间点前或后的笑话列表
+ * @method JokeLatest jokeLatest() 获取最新的笑话
+ * @method JokeRand jokeRand() 随机获取笑话
+ * @method LifeTip lifeTip() 生活小窍门
+ * @method LiteraryPoetry literaryPoetry() 唐诗三百首
+ * @method LiteraryTang literaryTang() 唐诗大全
+ * @method LiterarySong literarySong() 精选宋词
+ * @method LiteraryYuan literaryYuan() 元曲三百首
+ * @method LiteraryQuote literaryQuote() 古籍名句
+ * @method LiteraryMemo literaryMemo() 励志名言
+ * @method LiteraryQuan literaryQuan() 朋友圈文案
+ * @method LiteraryOne literaryOne() ONE一个
+ * @method LotteryTypes lotteryTypes() 获取当前支持的彩种列表
+ * @method LotteryQuery lotteryQuery() 根据彩票ID查询开奖结果，数据来源网络，仅供参考。
+ * @method LotteryBonus lotteryBonus() 根据投注的彩票号码及期数判断是否中奖，暂只支持双色球、大乐透单注或复式
+ * @method LotteryHistory lotteryHistory() 根据彩票ID查询历史开奖结果
+ * @method LuozQuery luozQuery() 车辆违章查询
+ * @method LuozSupport luozSupport() 用于查询某个地区是否支持违章查询，以及该地区车辆的车架号、发动机号所需的位数。
+ * @method LuozTimes luozTimes() 查询车辆违章的次数
+ * @method LuozNewEnergy luozNewEnergy() 目前支持广东、上海、江苏、河南、浙江、四川等地区的新能源车牌违章查询
+ * @method MedicineIndex medicineIndex() 中药大全
+ * @method MedicineSearch medicineSearch() 药品说明书
+ * @method MoneyConvert moneyConvert() 金额转大写
  * @method NewsToutiao newsToutiao()
- * @method NewsHot newsHot()
+ * @method NewsHot newsHot() 网络热搜排行
  * @method OcrIdcard ocrIdcard()
- * @method OcrIdOcr ocrIdOcr()
- * @method OcrBankcard ocrBankcard()
- * @method OcrBusinessLicense ocrBusinessLicense()
- * @method OcrDrivingLicense ocrDrivingLicense()
- * @method OcrVehicleLicense ocrVehicleLicense()
- * @method OcrPassport ocrPassport()
- * @method OcrInvoice ocrInvoice()
- * @method OcrHand ocrHand()
- * @method OcrIdCardText ocrIdCardText()
- * @method OcrFace ocrFace()
- * @method OcrTxt ocrTxt()
- * @method OcrArithmetic ocrArithmetic()
- * @method OcrEdu ocrEdu()
- * @method OcrMaskDetect ocrMaskDetect()
- * @method OilQuery oilQuery()
- * @method PetIndex petIndex()
- * @method PostcodeQuery postcodeQuery()
- * @method PostcodeSearch postcodeSearch()
- * @method PostcodePcd postcodePcd()
- * @method PostcodeZone postcodeZone()
- * @method QrcodeIndex qrcodeIndex()
- * @method QrcodeCodec qrcodeCodec()
- * @method RumourIndex rumourIndex()
- * @method ShopSnap shopSnap()
- * @method StarIndex starIndex()
- * @method SurnameIndex surnameIndex()
- * @method TaobaoDetail taobaoDetail()
- * @method TaobaoInfo taobaoInfo()
- * @method TaobaoImage taobaoImage()
- * @method TaobaoItem taobaoItem()
- * @method TaobaoShop taobaoShop()
- * @method TaobaoAlibabaInfo taobaoAlibabaInfo()
- * @method TaobaokeQuery taobaokeQuery()
- * @method TaobaokeCheckOrder taobaokeCheckOrder()
- * @method TelecomQuery telecomQuery()
- * @method TelecomDetail telecomDetail()
- * @method TelecomLocation telecomLocation()
- * @method TelecomIdentify telecomIdentify()
- * @method TelecomCodes telecomCodes()
- * @method TimeLunar timeLunar()
- * @method TimeHoliday timeHoliday()
- * @method TimeWorld timeWorld()
- * @method TodayEvent todayEvent()
- * @method TodayDetail todayDetail()
- * @method TrashIndex trashIndex()
- * @method TrashVoice trashVoice()
- * @method TrashImage trashImage()
- * @method TrashSearch trashSearch()
- * @method TulingIndex tulingIndex()
- * @method UnnBatchUcheck unnBatchUcheck()
- * @method UnnStatus unnStatus()
+ * @method OcrIdOcr ocrIdOcr() 身份证OCR
+ * @method OcrBankcard ocrBankcard() 银行卡OCR
+ * @method OcrBusinessLicense ocrBusinessLicense() 营业执照OCR
+ * @method OcrDrivingLicense ocrDrivingLicense() 驾驶证
+ * @method OcrVehicleLicense ocrVehicleLicense() 行驶证
+ * @method OcrPassport ocrPassport() 护照
+ * @method OcrInvoice ocrInvoice() 增值税发票
+ * @method OcrHand ocrHand() 手写OCR
+ * @method OcrIdCardText ocrIdCardText() 身份证文字识别
+ * @method OcrFace ocrFace() 人脸识别
+ * @method OcrTxt ocrTxt() 通用文字识别
+ * @method OcrArithmetic ocrArithmetic() 算式识别
+ * @method OcrEdu ocrEdu() 数学试题识别
+ * @method OcrMaskDetect ocrMaskDetect() 人脸口罩识别
+ * @method OilQuery oilQuery() 今日国内油价查询
+ * @method PetIndex petIndex() 宠物大全
+ * @method PostcodeQuery postcodeQuery() 通过邮编查询对应的地名
+ * @method PostcodeSearch postcodeSearch() 根据相关条件查询符合条件地区的邮编
+ * @method PostcodePcd postcodePcd() 根据相关条件查询符合条件地区的邮编
+ * @method PostcodeZone postcodeZone() 全国行政区查询,支持省、市、区（乡镇）、街道。最大4级
+ * @method QrcodeIndex qrcodeIndex() 根据传递参数实现二维码生成
+ * @method QrcodeCodec qrcodeCodec() 二维码解码
+ * @method RumourIndex rumourIndex() 谣言识别
+ * @method ShopSnap shopSnap() 拍照购
+ * @method StarIndex starIndex() 明星百科档案
+ * @method SurnameIndex surnameIndex() 姓氏起源
+ * @method TaobaoDetail taobaoDetail() 淘宝商品信息
+ * @method TaobaoItem taobaoItem() 淘宝商品信息详情版
+ * @method TaobaoInfo taobaoInfo() 淘宝商品信息轻量版
+ * @method TaobaoImage taobaoImage() 淘宝商品详情图片
+ * @method TaobaoShop taobaoShop() 获取卖家店铺的基本信息
+ * @method TaobaoAlibabaInfo taobaoAlibabaInfo() 阿里巴巴商品信息
+ * @method TaobaokeQuery taobaokeQuery() 淘口令解析api接口
+ * @method TaobaokeCheckOrder taobaokeCheckOrder() 淘宝客订单号检测接口,检测是否使用了淘客下单
+ * @method TelecomQuery telecomQuery() 手机实名认证
+ * @method TelecomDetail telecomDetail() 手机实名校验 根据姓名、身份证、手机号码校验是否一致,并返回不一致详情
+ * @method TelecomLocation telecomLocation() 手机号码归属地查询
+ * @method TelecomIdentify telecomIdentify() 查询手机/固话号码归属地，是否诈骗、营销、广告电话
+ * @method TelecomCodes telecomCodes() 根据传入的字符返回标准电码
+ * @method TimeLunar timeLunar() 二十四节气
+ * @method TimeHoliday timeHoliday() 节假日
+ * @method TimeWorld timeWorld() 全球时间查询
+ * @method TodayEvent todayEvent() 根据日期查询事件（列表）
+ * @method TodayDetail todayDetail() 根据事件id查询详细信息
+ * @method TrashIndex trashIndex() 垃圾分类
+ * @method TrashVoice trashVoice() 语音识别垃圾分类
+ * @method TrashImage trashImage() 图像识别垃圾分类
+ * @method TrashSearch trashSearch() 名称识别垃圾分类
+ * @method TulingIndex tulingIndex() 图灵机器人
+ * @method UnnBatchUcheck unnBatchUcheck() 手机空号检测
+ * @method UnnStatus unnStatus() 号码实时查询（基础版）
  * @method Verifybankcard3Query verifybankcard3Query()
  * @method Verifybankcard4Query verifybankcard4Query()
- * @method WeatherCoords weatherCoords()
- * @method WeatherIp weatherIp()
- * @method WeatherArea weatherArea()
- * @method WeatherAreaForecast24 weatherAreaForecast24()
- * @method WeatherAreaForecast7 weatherAreaForecast7()
- * @method WeatherAreaForecast15 weatherAreaForecast15()
- * @method WeatherAreaForecast40 weatherAreaForecast40()
- * @method WeatherAreaHistory weatherAreaHistory()
- * @method WeatherScenic weatherScenic()
- * @method WeatherZip weatherZip()
- * @method WeatherAreaId weatherAreaId()
+ * @method WeatherCoords weatherCoords() 根据名坐标查询天气
+ * @method WeatherIp weatherIp() 根据IP地址查询天气
+ * @method WeatherArea weatherArea() 根据名称或者ID查询天气
+ * @method WeatherAreaForecast24 weatherAreaForecast24() 根据名称或者ID查询24小时天气预报
+ * @method WeatherAreaForecast7 weatherAreaForecast7() 根据名称或者ID查询未来7天指定日期天气预报
+ * @method WeatherAreaForecast15 weatherAreaForecast15() 根据名称或者ID查询15天以内天气预报
+ * @method WeatherAreaForecast40 weatherAreaForecast40() 根据名称或者ID查询40天以内天气预报
+ * @method WeatherAreaHistory weatherAreaHistory() 根据名称或者ID查询历史天气预报
+ * @method WeatherScenic weatherScenic() 根据景点名称查询天气
+ * @method WeatherZip weatherZip() 根据邮编查询天气
+ * @method WeatherAreaId weatherAreaId() 根据地名查询对应的ID
  * @method WeatherQuery weatherQuery()
- * @method WeatherWids weatherWids()
- * @method WeatherCityList weatherCityList()
- * @method WebsiteBeian websiteBeian()
- * @method WebsiteQq websiteQq()
- * @method WebsiteCheatlink websiteCheatlink()
- * @method WebsiteCheatip websiteCheatip()
- * @method WebsiteAntispam websiteAntispam()
- * @method WebsiteImgcensor websiteImgcensor()
- * @method WebsiteShorturl websiteShorturl()
- * @method WebsiteHttps websiteHttps()
- * @method WebsiteBaidu websiteBaidu()
- * @method WebsiteSogou websiteSogou()
- * @method WebsiteSo websiteSo()
- * @method WebsiteIpv6 websiteIpv6()
- * @method WebsiteDomain websiteDomain()
- * @method WebsiteIp websiteIp()
- * @method WebsiteWabeian websiteWabeian()
- * @method WebsiteIcp websiteIcp()
- * @method WebsiteAlexa websiteAlexa()
- * @method WebsiteWhois websiteWhois()
- * @method WebsiteWhoisReverse websiteWhoisReverse()
- * @method WebsiteTop websiteTop()
- * @method WebsiteUrl2pic websiteUrl2pic()
- * @method WechatChoice wechatChoice()
- * @method WechatSearch wechatSearch()
- * @method WechatLink wechatLink()
- * @method WechatCheck wechatCheck()
- * @method WechatRead wechatRead()
- * @method WikiIndex wikiIndex()
- * @method WikiTiku wikiTiku()
- * @method WikiRiddle wikiRiddle()
- * @method WikiLantern wikiLantern()
- * @method WikiStory wikiStory()
- * @method WikiTongue wikiTongue()
- * @method WikiDoggerel wikiDoggerel()
- * @method WikiXiehou wikiXiehou()
- * @method WikiHotword wikiHotword()
- * @method WikiGodreply wikiGodreply()
- * @method WoolWcheck woolWcheck()
- * @method WoolWtag woolWtag()
- * @method WordSegment wordSegment()
- * @method XinhuaQuery xinhuaQuery()
- * @method XinhuaBushou xinhuaBushou()
- * @method XinhuaPinyin xinhuaPinyin()
- * @method XinhuaQuerybs xinhuaQuerybs()
- * @method XinhuaQuerypy xinhuaQuerypy()
- * @method XinhuaQueryid xinhuaQueryid()
- * @method XinhuaResemble xinhuaResemble()
- * @method XinhuaConvertPy xinhuaConvertPy()
- * @method XnbIndex xnbIndex()
+ * @method WeatherWids weatherWids() 查询天气种类列表（可以程序内置，无需每次读取）
+ * @method WeatherCityList weatherCityList() 查询当前支持的城市列表及城市ID（可以一次性读取保存）
+ * @method WebsiteBeian websiteBeian() 网站备案查询
+ * @method WebsiteQq websiteQq() 腾讯域名检测
+ * @method WebsiteCheatlink websiteCheatlink() 恶意链接检测
+ * @method WebsiteCheatip websiteCheatip() 恶意IP检测
+ * @method WebsiteAntispam websiteAntispam() 文本内容审核
+ * @method WebsiteImgcensor websiteImgcensor() 图片内容审核
+ * @method WebsiteShorturl websiteShorturl() 短网址转换
+ * @method WebsiteHttps websiteHttps() HTTPS检测
+ * @method WebsiteBaidu websiteBaidu() 百度收录量
+ * @method WebsiteSogou websiteSogou() 搜狗收录量
+ * @method WebsiteSo websiteSo() 360收录量
+ * @method WebsiteIpv6 websiteIpv6() ipv6检测
+ * @method WebsiteDomain websiteDomain() 查询域名信息
+ * @method WebsiteIp websiteIp() 查询IP地址信息
+ * @method WebsiteWabeian websiteWabeian() 网安备案查询
+ * @method WebsiteIcp websiteIcp() ICP域名备案查询
+ * @method WebsiteAlexa websiteAlexa() Alexa查询
+ * @method WebsiteWhois websiteWhois() whois查询
+ * @method WebsiteWhoisReverse websiteWhoisReverse() whois反查
+ * @method WebsiteTop websiteTop() 网站排行榜
+ * @method WebsiteUrl2pic websiteUrl2pic() 网址转换为图片及PDF
+ * @method WechatChoice wechatChoice() 微信公众号精选文章
+ * @method WechatSearch wechatSearch() 微信文章搜索
+ * @method WechatLink wechatLink() 微信临时链接转为永久链接
+ * @method WechatCheck wechatCheck() 微信域名检测
+ * @method WechatRead wechatRead() 微信文章阅读和点赞数
+ * @method WikiIndex wikiIndex() 十万个为什么
+ * @method WikiTiku wikiTiku() 百科题库
+ * @method WikiRiddle wikiRiddle() 谜语大全
+ * @method WikiLantern wikiLantern() 灯谜
+ * @method WikiStory wikiStory() 故事大全
+ * @method WikiTongue wikiTongue() 绕口令
+ * @method WikiDoggerel wikiDoggerel() 顺口溜
+ * @method WikiXiehou wikiXiehou() 歇后语
+ * @method WikiHotword wikiHotword() 网络热词
+ * @method WikiGodreply wikiGodreply() 神回复
+ * @method WoolWcheck woolWcheck() 羊毛党检测
+ * @method WoolWtag woolWtag() 羊毛党检测标签版
+ * @method WordSegment wordSegment() 中文分词
+ * @method XinhuaQuery xinhuaQuery() 根据汉字查询相关信息，如拼音、读音、详解、五笔等
+ * @method XinhuaBushou xinhuaBushou() 汉字部首列表大全，包含笔画信息
+ * @method XinhuaPinyin xinhuaPinyin() 汉字拼音列表大全
+ * @method XinhuaQuerybs xinhuaQuerybs() 根据汉字部首,查询符合条件的汉字详细信息
+ * @method XinhuaQuerypy xinhuaQuerypy() 根据汉字的拼音，查询相关的汉字信息
+ * @method XinhuaQueryid xinhuaQueryid() 根据接口列表返回的汉字id，查询汉字完整信息
+ * @method XinhuaResemble xinhuaResemble() 查询词语的同义词、反义词。
+ * @method XinhuaConvertPy xinhuaConvertPy() 汉字转拼音
+ * @method XnbIndex xnbIndex() 数字BTC,ETH,LTC地址
  */
 trait DefaultRequests
 {
