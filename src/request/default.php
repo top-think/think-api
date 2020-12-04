@@ -5,6 +5,29 @@ namespace think\api\request;
 use think\api\Request;
 
 /**
+ * @method $this withCity($value)
+ */
+class AirSearch extends Request
+{
+}
+
+/**
+ * @method $this withCity($value)
+ */
+class AirPm extends Request
+{
+}
+
+class AirCity extends Request
+{
+}
+
+class AirPmCity extends Request
+{
+    public $uri = 'air/pm_city';
+}
+
+/**
  * @method $this withDate($value)
  */
 class AlmanacDate extends Request
@@ -234,6 +257,32 @@ class CalendarYear extends Request
 }
 
 /**
+ * @method $this withImgBase64($value)
+ * @method $this withTypeId($value)
+ * @method $this withConvertToJpg($value)
+ * @method $this withNeedMorePrecise($value)
+ */
+class CaptchaNumber extends Request
+{
+}
+
+/**
+ * @method $this withImgBase64($value)
+ * @method $this withTypeId($value)
+ * @method $this withConvertToJpg($value)
+ */
+class CaptchaChinese extends Request
+{
+}
+
+/**
+ * @method $this withImgBase64($value)
+ */
+class CaptchaAlgorism extends Request
+{
+}
+
+/**
  * @method $this withFirstLetter($value)
  */
 class CarBrand extends Request
@@ -264,7 +313,15 @@ class CarObd extends Request
 }
 
 /**
- * @method $this withType($value)
+ * @method $this withCarNumber($value)
+ * @method $this withCarType($value)
+ */
+class CarQuery extends Request
+{
+}
+
+/**
+ * @method $this withDayNum($value)
  * @method $this withCity($value)
  */
 class CarLimit extends Request
@@ -276,6 +333,14 @@ class CarLimit extends Request
  */
 class CarVin extends Request
 {
+}
+
+/**
+ * @method $this withVin($value)
+ */
+class CarVinPro extends Request
+{
+    public $uri = 'car/vin_pro';
 }
 
 /**
@@ -869,6 +934,73 @@ class MoneyConvert extends Request
 }
 
 /**
+ * @method $this withTitle($value)
+ * @method $this withSmode($value)
+ * @method $this withPagesize($value)
+ * @method $this withOffset($value)
+ */
+class MovieSearch extends Request
+{
+}
+
+/**
+ * @method $this withLat($value)
+ * @method $this withLon($value)
+ * @method $this withRadius($value)
+ */
+class MovieCinemas extends Request
+{
+}
+
+/**
+ * @method $this withCityid($value)
+ * @method $this withKeyword($value)
+ * @method $this withPage($value)
+ * @method $this withPagesize($value)
+ */
+class MovieCinemaSearch extends Request
+{
+    public $uri = 'movie/cinema_search';
+}
+
+/**
+ * @method $this withCinemaid($value)
+ * @method $this withMovieid($value)
+ */
+class MovieCinemaMovies extends Request
+{
+    public $uri = 'movie/cinema_movies';
+}
+
+/**
+ * @method $this withCityid($value)
+ */
+class MovieToday extends Request
+{
+}
+
+class MovieSupportCity extends Request
+{
+    public $uri = 'movie/support_city';
+}
+
+/**
+ * @method $this withCityid($value)
+ * @method $this withMovieid($value)
+ */
+class MovieShowCinema extends Request
+{
+    public $uri = 'movie/show_cinema';
+}
+
+/**
+ * @method $this withMovieid($value)
+ */
+class MovieIndex extends Request
+{
+}
+
+/**
  * @method $this withType($value)
  */
 class NewsToutiao extends Request
@@ -1006,6 +1138,39 @@ class OcrMaskDetect extends Request
 
 class OilQuery extends Request
 {
+}
+
+/**
+ * @method $this withCityName($value)
+ * @method $this withCurrentPage($value)
+ * @method $this withPageSize($value)
+ */
+class ParkQuery extends Request
+{
+}
+
+/**
+ * @method $this withLongitude($value)
+ * @method $this withLatitude($value)
+ * @method $this withDistance($value)
+ * @method $this withCurrentPage($value)
+ * @method $this withPageSize($value)
+ */
+class ParkNearby extends Request
+{
+}
+
+/**
+ * @method $this withParkId($value)
+ * @method $this withParkUUId($value)
+ */
+class ParkInfo extends Request
+{
+}
+
+class ParkCityList extends Request
+{
+    public $uri = 'park/city_list';
 }
 
 /**
@@ -1506,6 +1671,13 @@ class WebsiteAntispam extends Request
 }
 
 /**
+ * @method $this withContent($value)
+ */
+class WebsiteAdreview extends Request
+{
+}
+
+/**
  * @method $this withImgurl($value)
  */
 class WebsiteImgcensor extends Request
@@ -1820,6 +1992,10 @@ class XnbIndex extends Request
 }
 
 /**
+ * @method AirSearch airSearch() 城市空气质量指数查询
+ * @method AirPm airPm() 城市空气PM2.5查询
+ * @method AirCity airCity() 城市空气质量支持城市
+ * @method AirPmCity airPmCity() 城市空气PM2.5支持城市
  * @method AlmanacDate almanacDate() 提供老黄历查询,黄历每日吉凶宜忌查询
  * @method AlmanacHour almanacHour() 提供老黄历查询,黄历每日吉凶宜忌查询
  * @method AlmanacQq almanacQq() 根据传入的参数qq号码测试qq的吉凶
@@ -1849,12 +2025,17 @@ class XnbIndex extends Request
  * @method CalendarDay calendarDay()
  * @method CalendarMonth calendarMonth()
  * @method CalendarYear calendarYear()
+ * @method CaptchaNumber captchaNumber() 识别数字、英文验证码
+ * @method CaptchaChinese captchaChinese() 识别中英文验证码
+ * @method CaptchaAlgorism captchaAlgorism() 算式验证码识别
  * @method CarBrand carBrand() 返回车辆品牌所有列表，或更具中文拼音首字母查询品牌列表
  * @method CarSeries carSeries() 根据车辆品牌ID查询旗下车系列表
  * @method CarModels carModels() 根据车系id查询旗下车型列表
  * @method CarObd carObd() 通过OBD故障码查询相关信息
+ * @method CarQuery carQuery() 查询车辆详细信息
  * @method CarLimit carLimit() 尾号限行
  * @method CarVin carVin() VIN码查询
+ * @method CarVinPro carVinPro() VIN码查询-专业版
  * @method CharConvert charConvert() 转换字符串至简体、繁体、火星文，每次最多支持100个字符
  * @method ChengyuQuery chengyuQuery() 根据成语查询详细信息，如：详解、同义词、反义词、读音等信息
  * @method ChengyuAllusion chengyuAllusion() 成语典故
@@ -1933,6 +2114,14 @@ class XnbIndex extends Request
  * @method MedicineIndex medicineIndex() 中药大全
  * @method MedicineSearch medicineSearch() 药品说明书
  * @method MoneyConvert moneyConvert() 金额转大写
+ * @method MovieSearch movieSearch() 关键字检索影片信息
+ * @method MovieCinemas movieCinemas() 检索周边影院
+ * @method MovieCinemaSearch movieCinemaSearch() 关键字影院检索
+ * @method MovieCinemaMovies movieCinemaMovies() 影院上映影片信息
+ * @method MovieToday movieToday() 今日上映影片信息
+ * @method MovieSupportCity movieSupportCity() 支持城市列表
+ * @method MovieShowCinema movieShowCinema() 影片上映影院查询
+ * @method MovieIndex movieIndex() 按影片id查询影片信息
  * @method NewsToutiao newsToutiao()
  * @method NewsHot newsHot() 网络热搜排行
  * @method OcrIdcard ocrIdcard()
@@ -1951,6 +2140,10 @@ class XnbIndex extends Request
  * @method OcrEdu ocrEdu() 数学试题识别
  * @method OcrMaskDetect ocrMaskDetect() 人脸口罩识别
  * @method OilQuery oilQuery() 今日国内油价查询
+ * @method ParkQuery parkQuery() 查询指定城市停车场信息列
+ * @method ParkNearby parkNearby() 查询周边停车场信息列表
+ * @method ParkInfo parkInfo() 获取停车场详情信息
+ * @method ParkCityList parkCityList() 获取开放停车场查询的城市列表
  * @method PetIndex petIndex() 宠物大全
  * @method PostcodeQuery postcodeQuery() 通过邮编查询对应的地名
  * @method PostcodeSearch postcodeSearch() 根据相关条件查询符合条件地区的邮编
@@ -2008,6 +2201,7 @@ class XnbIndex extends Request
  * @method WebsiteCheatlink websiteCheatlink() 恶意链接检测
  * @method WebsiteCheatip websiteCheatip() 恶意IP检测
  * @method WebsiteAntispam websiteAntispam() 文本内容审核
+ * @method WebsiteAdreview websiteAdreview() 广告法违禁词汇
  * @method WebsiteImgcensor websiteImgcensor() 图片内容审核
  * @method WebsiteShorturl websiteShorturl() 短网址转换
  * @method WebsiteHttps websiteHttps() HTTPS检测
