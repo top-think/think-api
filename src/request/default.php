@@ -588,6 +588,31 @@ class FanyiIndex extends Request
 }
 
 /**
+ * @method $this withOrgCity($value)
+ * @method $this withDstCity($value)
+ * @method $this withFlightNo($value)
+ */
+class FlightQuery extends Request
+{
+}
+
+/**
+ * @method $this withFlightNo($value)
+ * @method $this withFlightDate($value)
+ */
+class FlightHistory extends Request
+{
+}
+
+/**
+ * @method $this withFlightNo($value)
+ * @method $this withFlightDate($value)
+ */
+class FlightFuture extends Request
+{
+}
+
+/**
  * @method $this withWord($value)
  * @method $this withMode($value)
  * @method $this withNum($value)
@@ -2070,6 +2095,9 @@ class XnbIndex extends Request
  * @method FanyiIndex fanyiIndex() 语言翻译
  * @method FoodNutrient foodNutrient() 食物营养成分表
  * @method FoodMenu foodMenu() 菜谱查询
+ * @method FlightQuery flightQuery() 航班实时信息查询
+ * @method FlightHistory flightHistory() 航班历史信息查询
+ * @method FlightFuture flightFuture() 未来航班信息查询
  * @method GeoIndex geoIndex() 经纬度地址解析
  * @method GeoConvert geoConvert() 支持百度、谷歌、GPS三大经纬度互相转化
  * @method GoldQuery goldQuery() 上海黄金交易所 2分钟更新一次
