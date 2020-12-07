@@ -1272,6 +1272,46 @@ class RumourIndex extends Request
 {
 }
 
+class SecondhandCarBrand extends Request
+{
+}
+
+class SecondhandCarProvince extends Request
+{
+}
+
+/**
+ * @method $this withProvinceId($value)
+ */
+class SecondhandCarCity extends Request
+{
+}
+
+/**
+ * @method $this withBrandId($value)
+ */
+class SecondhandCarFamily extends Request
+{
+}
+
+/**
+ * @method $this withFamilyId($value)
+ */
+class SecondhandCarModel extends Request
+{
+}
+
+/**
+ * @method $this withRegDate($value)
+ * @method $this withCity($value)
+ * @method $this withProvinceId($value)
+ * @method $this withAutoHomeId($value)
+ * @method $this withMiles($value)
+ */
+class secondhandCarQuery extends Request
+{
+}
+
 /**
  * @method $this withImage($value)
  */
@@ -2180,6 +2220,12 @@ class XnbIndex extends Request
  * @method QrcodeIndex qrcodeIndex() 根据传递参数实现二维码生成
  * @method QrcodeCodec qrcodeCodec() 二维码解码
  * @method RumourIndex rumourIndex() 谣言识别
+ * @method SecondhandCarBrand secondhandCarBrand() 二手车品牌列表
+ * @method SecondhandCarCity secondhandCarCity() 估值支持城市
+ * @method SecondhandCarProvince secondhandCarProvince() 估值支持省份
+ * @method SecondhandCarModel secondhandCarModel() 指定品牌全部车型
+ * @method SecondhandCarFamily secondhandCarFamily() 指定车型全部车系
+ * @method SecondhandCarQuery secondhandCarQuery() 二手车估值
  * @method ShopSnap shopSnap() 拍照购
  * @method StarIndex starIndex() 明星百科档案
  * @method SurnameIndex surnameIndex() 姓氏起源
