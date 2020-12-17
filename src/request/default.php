@@ -1274,10 +1274,12 @@ class RumourIndex extends Request
 
 class SecondhandCarBrand extends Request
 {
+    public $uri = 'secondhand_car/brand';
 }
 
 class SecondhandCarProvince extends Request
 {
+    public $uri = 'secondhand_car/province';
 }
 
 /**
@@ -1285,6 +1287,7 @@ class SecondhandCarProvince extends Request
  */
 class SecondhandCarCity extends Request
 {
+    public $uri = 'secondhand_car/city';
 }
 
 /**
@@ -1292,6 +1295,7 @@ class SecondhandCarCity extends Request
  */
 class SecondhandCarFamily extends Request
 {
+    public $uri = 'secondhand_car/family';
 }
 
 /**
@@ -1299,6 +1303,7 @@ class SecondhandCarFamily extends Request
  */
 class SecondhandCarModel extends Request
 {
+    public $uri = 'secondhand_car/model';
 }
 
 /**
@@ -1310,6 +1315,7 @@ class SecondhandCarModel extends Request
  */
 class secondhandCarQuery extends Request
 {
+    public $uri = 'secondhand_car/query';
 }
 
 /**
