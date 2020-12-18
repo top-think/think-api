@@ -1037,6 +1037,376 @@ class NewsHot extends Request
 }
 
 /**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsWoman extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsRubbish extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsEnvironmental extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsMovie extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsDigiccy extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsHouse extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsBlockchain extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsSicprobe extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withSource($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsGeneral extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withSrc($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsTop extends Request
+{
+}
+
+/**
+ * @method $this withAreaname($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsArea extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsAuto extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsInternet extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsAgriculture extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsHanfu extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsComic extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsFinance extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsCba extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsAi extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsIt extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsVr extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsBeauty extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsQiwen extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsHealth extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsTravel extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsMobile extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsMilitary extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsApple extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsStartup extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsKeji extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsFootball extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsNba extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsSport extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsFun extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsWorld extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsInternal extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withRand($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsSocial extends Request
+{
+}
+
+/**
  * @method $this withImage($value)
  * @method $this withSide($value)
  */
@@ -1150,6 +1520,18 @@ class OcrArithmetic extends Request
  */
 class OcrEdu extends Request
 {
+}
+
+/**
+ * @method $this withName($value)
+ * @method $this withIdentityCard($value)
+ * @method $this withFacePic($value)
+ * @method $this withIdcardFront($value)
+ * @method $this withIdcardBackground($value)
+ */
+class OcrRealPerson extends Request
+{
+    public $uri = 'ocr/real_person';
 }
 
 /**
@@ -1277,19 +1659,6 @@ class SecondhandCarBrand extends Request
     public $uri = 'secondhand_car/brand';
 }
 
-class SecondhandCarProvince extends Request
-{
-    public $uri = 'secondhand_car/province';
-}
-
-/**
- * @method $this withProvinceId($value)
- */
-class SecondhandCarCity extends Request
-{
-    public $uri = 'secondhand_car/city';
-}
-
 /**
  * @method $this withBrandId($value)
  */
@@ -1306,6 +1675,20 @@ class SecondhandCarModel extends Request
     public $uri = 'secondhand_car/model';
 }
 
+class SecondhandCarProvince extends Request
+{
+    public $uri = 'secondhand_car/province';
+}
+
+/**
+ * @method $this withCarNumber($value)
+ * @method $this withCarType($value)
+ */
+class SecondhandCarCity extends Request
+{
+    public $uri = 'secondhand_car/city';
+}
+
 /**
  * @method $this withRegDate($value)
  * @method $this withCity($value)
@@ -1313,7 +1696,7 @@ class SecondhandCarModel extends Request
  * @method $this withAutoHomeId($value)
  * @method $this withMiles($value)
  */
-class secondhandCarQuery extends Request
+class SecondhandCarQuery extends Request
 {
     public $uri = 'secondhand_car/query';
 }
@@ -1861,6 +2244,13 @@ class WebsiteTop extends Request
 
 /**
  * @method $this withUrl($value)
+ */
+class WebsiteHtmltext extends Request
+{
+}
+
+/**
+ * @method $this withUrl($value)
  * @method $this withType($value)
  * @method $this withWidth($value)
  */
@@ -1899,6 +2289,14 @@ class WechatLink extends Request
  */
 class WechatCheck extends Request
 {
+}
+
+/**
+ * @method $this withDomain($value)
+ */
+class WechatDomainCheck extends Request
+{
+    public $uri = 'wechat/domain_check';
 }
 
 /**
@@ -2139,11 +2537,11 @@ class XnbIndex extends Request
  * @method ExpressDot expressDot() 网点查询
  * @method ExpressAddress expressAddress() 收货信息智能解析
  * @method FanyiIndex fanyiIndex() 语言翻译
+ * @method FlightQuery flightQuery() 实时起降信息查询
+ * @method FlightHistory flightHistory() 历史起降信息查询
+ * @method FlightFuture flightFuture() 根据航班号日期查询未来航班信息
  * @method FoodNutrient foodNutrient() 食物营养成分表
  * @method FoodMenu foodMenu() 菜谱查询
- * @method FlightQuery flightQuery() 航班实时信息查询
- * @method FlightHistory flightHistory() 航班历史信息查询
- * @method FlightFuture flightFuture() 未来航班信息查询
  * @method GeoIndex geoIndex() 经纬度地址解析
  * @method GeoConvert geoConvert() 支持百度、谷歌、GPS三大经纬度互相转化
  * @method GoldQuery goldQuery() 上海黄金交易所 2分钟更新一次
@@ -2198,6 +2596,43 @@ class XnbIndex extends Request
  * @method MovieIndex movieIndex() 按影片id查询影片信息
  * @method NewsToutiao newsToutiao()
  * @method NewsHot newsHot() 网络热搜排行
+ * @method NewsWoman newsWoman() 女性新闻
+ * @method NewsRubbish newsRubbish() 垃圾分类新闻资讯接口
+ * @method NewsEnvironmental newsEnvironmental() 环保资讯
+ * @method NewsMovie newsMovie() 影视资讯
+ * @method NewsDigiccy newsDigiccy() 币圈资讯
+ * @method NewsHouse newsHouse() 区块链新闻
+ * @method NewsBlockchain newsBlockchain() 区块链新闻
+ * @method NewsSicprobe newsSicprobe() 科学探索
+ * @method NewsGeneral newsGeneral() 综合新闻
+ * @method NewsTop newsTop() 今日头条新闻
+ * @method NewsArea newsArea() 地区新闻
+ * @method NewsAuto newsAuto() 汽车新闻
+ * @method NewsInternet newsInternet() 互联网资讯
+ * @method NewsAgriculture newsAgriculture() 农业新闻
+ * @method NewsHanfu newsHanfu() 汉服新闻
+ * @method NewsComic newsComic() 动漫资讯
+ * @method NewsFinance newsFinance() 财经新闻
+ * @method NewsCba newsCba() CBA新闻
+ * @method NewsAi newsAi() 人工智能
+ * @method NewsIt newsIt() IT资讯
+ * @method NewsVr newsVr() VR科技
+ * @method NewsBeauty newsBeauty() 美女图片
+ * @method NewsQiwen newsQiwen() 奇闻异事
+ * @method NewsHealth newsHealth() 健康知识
+ * @method NewsTravel newsTravel() 旅游资讯
+ * @method NewsMobile newsMobile() 移动通信
+ * @method NewsMilitary newsMilitary() 军事新闻
+ * @method NewsApple newsApple() 苹果新闻
+ * @method NewsStartup newsStartup() 创业资讯
+ * @method NewsKeji newsKeji() 科技新闻
+ * @method NewsFootball newsFootball() 足球新闻
+ * @method NewsNba newsNba() NBA新闻
+ * @method NewsSport newsSport() 体育新闻
+ * @method NewsFun newsFun() 娱乐新闻
+ * @method NewsWorld newsWorld() 国际新闻
+ * @method NewsInternal newsInternal() 国内新闻
+ * @method NewsSocial newsSocial() 社会新闻
  * @method OcrIdcard ocrIdcard()
  * @method OcrIdOcr ocrIdOcr() 身份证OCR
  * @method OcrBankcard ocrBankcard() 银行卡OCR
@@ -2212,6 +2647,7 @@ class XnbIndex extends Request
  * @method OcrTxt ocrTxt() 通用文字识别
  * @method OcrArithmetic ocrArithmetic() 算式识别
  * @method OcrEdu ocrEdu() 数学试题识别
+ * @method OcrRealPerson ocrRealPerson() 实人认证
  * @method OcrMaskDetect ocrMaskDetect() 人脸口罩识别
  * @method OilQuery oilQuery() 今日国内油价查询
  * @method ParkQuery parkQuery() 查询指定城市停车场信息列
@@ -2226,11 +2662,11 @@ class XnbIndex extends Request
  * @method QrcodeIndex qrcodeIndex() 根据传递参数实现二维码生成
  * @method QrcodeCodec qrcodeCodec() 二维码解码
  * @method RumourIndex rumourIndex() 谣言识别
- * @method SecondhandCarBrand secondhandCarBrand() 二手车品牌列表
- * @method SecondhandCarCity secondhandCarCity() 估值支持城市
- * @method SecondhandCarProvince secondhandCarProvince() 估值支持省份
- * @method SecondhandCarModel secondhandCarModel() 指定品牌全部车型
- * @method SecondhandCarFamily secondhandCarFamily() 指定车型全部车系
+ * @method SecondhandCarBrand secondhandCarBrand() 返回车辆品牌所有列表
+ * @method SecondhandCarFamily secondhandCarFamily() 指定品牌全部车系列表
+ * @method SecondhandCarModel secondhandCarModel() 指定车系具体车型列表
+ * @method SecondhandCarProvince secondhandCarProvince() 估值支持的省份
+ * @method SecondhandCarCity secondhandCarCity() 估值支持的城市
  * @method SecondhandCarQuery secondhandCarQuery() 二手车估值
  * @method ShopSnap shopSnap() 拍照购
  * @method StarIndex starIndex() 明星百科档案
@@ -2297,11 +2733,13 @@ class XnbIndex extends Request
  * @method WebsiteWhois websiteWhois() whois查询
  * @method WebsiteWhoisReverse websiteWhoisReverse() whois反查
  * @method WebsiteTop websiteTop() 网站排行榜
+ * @method WebsiteHtmltext websiteHtmltext() 获取网页文章/新闻全文内容
  * @method WebsiteUrl2pic websiteUrl2pic() 网址转换为图片及PDF
  * @method WechatChoice wechatChoice() 微信公众号精选文章
  * @method WechatSearch wechatSearch() 微信文章搜索
  * @method WechatLink wechatLink() 微信临时链接转为永久链接
  * @method WechatCheck wechatCheck() 微信域名检测
+ * @method WechatDomainCheck wechatDomainCheck() 微信域名检测
  * @method WechatRead wechatRead() 微信文章阅读和点赞数
  * @method WikiIndex wikiIndex() 十万个为什么
  * @method WikiTiku wikiTiku() 百科题库
