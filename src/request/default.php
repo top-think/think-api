@@ -1681,8 +1681,7 @@ class SecondhandCarProvince extends Request
 }
 
 /**
- * @method $this withCarNumber($value)
- * @method $this withCarType($value)
+ * @method $this withProvinceId($value)
  */
 class SecondhandCarCity extends Request
 {
