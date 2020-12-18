@@ -1038,7 +1038,6 @@ class NewsHot extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1048,7 +1047,6 @@ class NewsWoman extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1058,7 +1056,6 @@ class NewsRubbish extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1068,7 +1065,6 @@ class NewsEnvironmental extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1078,7 +1074,6 @@ class NewsMovie extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1088,7 +1083,6 @@ class NewsDigiccy extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1098,7 +1092,6 @@ class NewsHouse extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1108,7 +1101,6 @@ class NewsBlockchain extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1119,7 +1111,6 @@ class NewsSicprobe extends Request
 /**
  * @method $this withNum($value)
  * @method $this withSource($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1148,7 +1139,6 @@ class NewsArea extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1158,7 +1148,6 @@ class NewsAuto extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1168,7 +1157,6 @@ class NewsInternet extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1178,7 +1166,6 @@ class NewsAgriculture extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1188,7 +1175,6 @@ class NewsHanfu extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1198,7 +1184,6 @@ class NewsComic extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1208,7 +1193,6 @@ class NewsFinance extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1218,7 +1202,6 @@ class NewsCba extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1228,7 +1211,6 @@ class NewsAi extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1238,7 +1220,6 @@ class NewsIt extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1248,7 +1229,6 @@ class NewsVr extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1258,7 +1238,6 @@ class NewsBeauty extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1268,7 +1247,6 @@ class NewsQiwen extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1278,7 +1256,6 @@ class NewsHealth extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1288,7 +1265,6 @@ class NewsTravel extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1298,7 +1274,6 @@ class NewsMobile extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1308,7 +1283,6 @@ class NewsMilitary extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1318,7 +1292,6 @@ class NewsApple extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1328,7 +1301,6 @@ class NewsStartup extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1338,7 +1310,6 @@ class NewsKeji extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1348,7 +1319,6 @@ class NewsFootball extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1358,7 +1328,6 @@ class NewsNba extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1368,7 +1337,6 @@ class NewsSport extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1378,7 +1346,6 @@ class NewsFun extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1388,7 +1355,6 @@ class NewsWorld extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
@@ -1398,7 +1364,6 @@ class NewsInternal extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withRand($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
