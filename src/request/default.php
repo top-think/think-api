@@ -313,6 +313,27 @@ class CarObd extends Request
 }
 
 /**
+ * @method $this withCity($value)
+ * @method $this withKeywords($value)
+ * @method $this withFormat($value)
+ * @method $this withPage($value)
+ */
+class CarRegion extends Request
+{
+}
+
+/**
+ * @method $this withLon($value)
+ * @method $this withLat($value)
+ * @method $this withFormat($value)
+ * @method $this withR($value)
+ * @method $this withPage($value)
+ */
+class CarNearby extends Request
+{
+}
+
+/**
  * @method $this withCarNumber($value)
  * @method $this withCarType($value)
  */
@@ -2467,6 +2488,8 @@ class XnbIndex extends Request
  * @method CarObd carObd() 通过OBD故障码查询相关信息
  * @method CarQuery carQuery() 查询车辆详细信息
  * @method CarLimit carLimit() 尾号限行
+ * @method CarRegion carRegion() 按城市检索加油站
+ * @method CarNearby carNearby() 检索周边加油站
  * @method CarVin carVin() VIN码查询
  * @method CarVinPro carVinPro() VIN码查询-专业版
  * @method CharConvert charConvert() 转换字符串至简体、繁体、火星文，每次最多支持100个字符
