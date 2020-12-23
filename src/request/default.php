@@ -2229,6 +2229,14 @@ class WebsiteTop extends Request
 
 /**
  * @method $this withUrl($value)
+ * @method $this withFormat($value)
+ */
+class WebsiteHtmlpic extends Request
+{
+}
+
+/**
+ * @method $this withUrl($value)
  */
 class WebsiteHtmltext extends Request
 {
@@ -2721,6 +2729,7 @@ class XnbIndex extends Request
  * @method WebsiteWhoisReverse websiteWhoisReverse() whois反查
  * @method WebsiteTop websiteTop() 网站排行榜
  * @method WebsiteHtmltext websiteHtmltext() 获取网页文章/新闻全文内容
+ * @method WebsiteHtmlpic websiteHtmlpic() 获取网页图片
  * @method WebsiteUrl2pic websiteUrl2pic() 网址转换为图片及PDF
  * @method WechatChoice wechatChoice() 微信公众号精选文章
  * @method WechatSearch wechatSearch() 微信文章搜索
