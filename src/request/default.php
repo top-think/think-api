@@ -72,8 +72,8 @@ class BaiduPcRank extends Request
 }
 
 /**
- * @method $this withQueryData($value)
- * @method $this withQueryType($value)
+ * @method $this withDomainName($value)
+ * @method $this withKeyword($value)
  */
 class BaiduMobileRank extends Request
 {
@@ -315,8 +315,8 @@ class CarObd extends Request
 /**
  * @method $this withCity($value)
  * @method $this withKeywords($value)
- * @method $this withFormat($value)
  * @method $this withPage($value)
+ * @method $this withFormat($value)
  */
 class CarRegion extends Request
 {
@@ -325,9 +325,9 @@ class CarRegion extends Request
 /**
  * @method $this withLon($value)
  * @method $this withLat($value)
+ * @method $this withPage($value)
  * @method $this withFormat($value)
  * @method $this withR($value)
- * @method $this withPage($value)
  */
 class CarNearby extends Request
 {
@@ -470,6 +470,15 @@ class EnglishDay extends Request
 class EnterpriseDetailInfo extends Request
 {
     public $uri = 'enterprise/detail_info';
+}
+
+/**
+ * @method $this withKeyword($value)
+ * @method $this withName($value)
+ * @method $this withOperName($value)
+ */
+class EnterpriseVerify extends Request
+{
 }
 
 /**
@@ -951,6 +960,68 @@ class LuozTimes extends Request
 class LuozNewEnergy extends Request
 {
     public $uri = 'luoz/new_energy';
+}
+
+/**
+ * @method $this withJszh($value)
+ * @method $this withDabh($value)
+ */
+class LuozPoints extends Request
+{
+}
+
+/**
+ * @method $this withCarNo($value)
+ * @method $this withVin($value)
+ * @method $this withEngineNo($value)
+ * @method $this withType($value)
+ */
+class LuozHistory extends Request
+{
+}
+
+/**
+ * @method $this withPrefix($value)
+ */
+class LuozRule extends Request
+{
+}
+
+/**
+ * @method $this withName($value)
+ * @method $this withCardNo($value)
+ * @method $this withArchviesNo($value)
+ */
+class LuozLicense extends Request
+{
+}
+
+/**
+ * @method $this withHphm($value)
+ * @method $this withEngineno($value)
+ * @method $this withClassno($value)
+ * @method $this withHpzl($value)
+ */
+class LuozQuery2 extends Request
+{
+}
+
+/**
+ * @method $this withAbbr($value)
+ */
+class LuozCitylist extends Request
+{
+}
+
+/**
+ * @method $this withLat($value)
+ * @method $this withLon($value)
+ * @method $this withPage($value)
+ * @method $this withPagesize($value)
+ * @method $this withR($value)
+ */
+class LuozNearby extends Request
+{
 }
 
 /**
@@ -2124,6 +2195,13 @@ class WebsiteImgcensor extends Request
 }
 
 /**
+ * @method $this withLinks($value)
+ */
+class WebsiteSurl extends Request
+{
+}
+
+/**
  * @method $this withUrl($value)
  */
 class WebsiteShorturl extends Request
@@ -2191,7 +2269,21 @@ class WebsiteWabeian extends Request
 /**
  * @method $this withDomainName($value)
  */
+class WebsiteTdk extends Request
+{
+}
+
+/**
+ * @method $this withDomainName($value)
+ */
 class WebsiteIcp extends Request
+{
+}
+
+/**
+ * @method $this withCompanyName($value)
+ */
+class WebsiteCompany extends Request
 {
 }
 
@@ -2494,10 +2586,10 @@ class XnbIndex extends Request
  * @method CarSeries carSeries() 根据车辆品牌ID查询旗下车系列表
  * @method CarModels carModels() 根据车系id查询旗下车型列表
  * @method CarObd carObd() 通过OBD故障码查询相关信息
+ * @method CarRegion carRegion() 按城市检索加油站
+ * @method CarNearby carNearby() 附近加油站
  * @method CarQuery carQuery() 查询车辆详细信息
  * @method CarLimit carLimit() 尾号限行
- * @method CarRegion carRegion() 按城市检索加油站
- * @method CarNearby carNearby() 检索周边加油站
  * @method CarVin carVin() VIN码查询
  * @method CarVinPro carVinPro() VIN码查询-专业版
  * @method CharConvert charConvert() 转换字符串至简体、繁体、火星文，每次最多支持100个字符
@@ -2514,7 +2606,8 @@ class XnbIndex extends Request
  * @method DrivingQuery drivingQuery() 根据输入参数返回相关题目
  * @method DrivingAnswer drivingAnswer() 返回answer字段对应答案信息
  * @method EnglishDay englishDay() 每日一句
- * @method EnterpriseDetailInfo enterpriseDetailInfo()
+ * @method EnterpriseDetailInfo enterpriseDetailInfo() 企业信息精准查询
+ * @method EnterpriseVerify enterpriseVerify() 企业三要素核验
  * @method EnterpriseCopyright enterpriseCopyright() 企业著作权查询
  * @method EnterpriseCreditcode enterpriseCreditcode() 企业开票信息查询
  * @method EnterpriseTrademark enterpriseTrademark() 商标信息查询
@@ -2578,6 +2671,13 @@ class XnbIndex extends Request
  * @method LuozSupport luozSupport() 用于查询某个地区是否支持违章查询，以及该地区车辆的车架号、发动机号所需的位数。
  * @method LuozTimes luozTimes() 查询车辆违章的次数
  * @method LuozNewEnergy luozNewEnergy() 目前支持广东、上海、江苏、河南、浙江、四川等地区的新能源车牌违章查询
+ * @method LuozPoints luozPoints() 累计计分查询
+ * @method LuozHistory luozHistory() 查询车辆历史违章
+ * @method LuozRule luozRule() 获取城市查询违章的参数规则
+ * @method LuozLicense luozLicense() 驾驶证核查
+ * @method LuozQuery2 luozQuery2() 违章查询V2
+ * @method LuozCitylist luozCitylist() 违章查询支持城市列表
+ * @method LuozNearby luozNearby() 附近违章高发地
  * @method MedicineIndex medicineIndex() 中药大全
  * @method MedicineSearch medicineSearch() 药品说明书
  * @method MoneyConvert moneyConvert() 金额转大写
@@ -2714,6 +2814,7 @@ class XnbIndex extends Request
  * @method WebsiteAntispam websiteAntispam() 文本内容审核
  * @method WebsiteAdreview websiteAdreview() 广告法违禁词汇
  * @method WebsiteImgcensor websiteImgcensor() 图片内容审核
+ * @method WebsiteSurl websiteSurl() 防封短网址生成
  * @method WebsiteShorturl websiteShorturl() 短网址转换
  * @method WebsiteHttps websiteHttps() HTTPS检测
  * @method WebsiteBaidu websiteBaidu() 百度收录量
@@ -2723,13 +2824,15 @@ class XnbIndex extends Request
  * @method WebsiteDomain websiteDomain() 查询域名信息
  * @method WebsiteIp websiteIp() 查询IP地址信息
  * @method WebsiteWabeian websiteWabeian() 网安备案查询
+ * @method WebsiteTdk websiteTdk() 网站TDK信息
  * @method WebsiteIcp websiteIcp() ICP域名备案查询
+ * @method WebsiteCompany websiteCompany() 主办单位备案查询（实时）
  * @method WebsiteAlexa websiteAlexa() Alexa查询
  * @method WebsiteWhois websiteWhois() whois查询
  * @method WebsiteWhoisReverse websiteWhoisReverse() whois反查
  * @method WebsiteTop websiteTop() 网站排行榜
+ * @method WebsiteHtmlpic websiteHtmlpic() 抽取网页图片
  * @method WebsiteHtmltext websiteHtmltext() 获取网页文章/新闻全文内容
- * @method WebsiteHtmlpic websiteHtmlpic() 获取网页图片
  * @method WebsiteUrl2pic websiteUrl2pic() 网址转换为图片及PDF
  * @method WechatChoice wechatChoice() 微信公众号精选文章
  * @method WechatSearch wechatSearch() 微信文章搜索
