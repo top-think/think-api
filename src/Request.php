@@ -12,7 +12,7 @@ abstract class Request
 {
     use ObjectAccess;
 
-    public $method = "POST";
+    public $method = "GET";
 
     public $uri;
 
@@ -35,7 +35,7 @@ abstract class Request
         if ($this->method == 'GET') {
             $this->options['query'] = $this->data;
         } else {
-            $this->options['form_params'] = $this->data;
+            $this->options['body'] = $this->data;
         }
     }
 
