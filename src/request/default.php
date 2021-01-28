@@ -764,6 +764,7 @@ class IdcardQuery extends Request
  */
 class IdcardIndex extends Request
 {
+    public $method = 'GET';
 }
 
 /**
@@ -802,6 +803,7 @@ class ImageGifDetect extends Request
  */
 class IpIndex extends Request
 {
+    public $method = 'GET';
 }
 
 /**

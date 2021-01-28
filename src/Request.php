@@ -12,7 +12,7 @@ abstract class Request
 {
     use ObjectAccess;
 
-    public $method = "GET";
+    public $method = "POST";
 
     public $uri;
 
