@@ -1786,6 +1786,29 @@ class SurnameIndex extends Request
 {
 }
 
+class SpringTravelCitys extends Request
+{
+}
+
+/**
+ * @method $this withFrom($value)
+ * @method $this withTo($value)
+ */
+class SpringTravelQuery extends Request
+{
+}
+
+/**
+ * @method $this withCityId($value)
+ */
+class SpringTravelHsjg extends Request
+{
+}
+
+class SpringTravelRisk extends Request
+{
+}
+
 /**
  * @method $this withId($value)
  */
@@ -2767,6 +2790,10 @@ class XnbIndex extends Request
  * @method SecondhandCarQuery secondhandCarQuery() 二手车估值
  * @method ShopSnap shopSnap() 拍照购
  * @method StarIndex starIndex() 明星百科档案
+ * @method SpringTravelQuery springTravelQuery() 疫情政策查询
+ * @method SpringTravelCitys springTravelCitys() 疫情政策查询支持城市
+ * @method SpringTravelHsjg springTravelHsjg() 城市核酸检测机构
+ * @method SpringTravelRisk springTravelRisk() 疫情风险地区查询
  * @method SurnameIndex surnameIndex() 姓氏起源
  * @method TaobaoDetail taobaoDetail() 淘宝商品信息
  * @method TaobaoItem taobaoItem() 淘宝商品信息详情版
