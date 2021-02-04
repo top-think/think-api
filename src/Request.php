@@ -35,7 +35,7 @@ abstract class Request
         if ($this->method == 'GET') {
             $this->options['query'] = $this->data;
         } else {
-            $this->options['body'] = $this->data;
+            $this->options['form_params'] = $this->data;
         }
     }
 
