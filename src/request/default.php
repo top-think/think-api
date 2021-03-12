@@ -2161,6 +2161,13 @@ class WeatherQuery extends Request
 {
 }
 
+/**
+ * @method $this withCity($value)
+ */
+class WeatherLife extends Request
+{
+}
+
 class WeatherWids extends Request
 {
 }
@@ -2834,6 +2841,7 @@ class XnbIndex extends Request
  * @method WeatherZip weatherZip() 根据邮编查询天气
  * @method WeatherAreaId weatherAreaId() 根据地名查询对应的ID
  * @method WeatherQuery weatherQuery()
+ * @method WeatherLife weatherLife()
  * @method WeatherWids weatherWids() 查询天气种类列表（可以程序内置，无需每次读取）
  * @method WeatherCityList weatherCityList() 查询当前支持的城市列表及城市ID（可以一次性读取保存）
  * @method WebsiteBeian websiteBeian() 网站备案查询
