@@ -1760,6 +1760,16 @@ class SecondhandCarQuery extends Request
 }
 
 /**
+ * @method $this withSignId($value)
+ * @method $this withTemplateId($value)
+ * @method $this withPhone($value)
+ * @method $this withParams($value)
+ */
+class SmsSend extends Request
+{
+}
+
+/**
  * @method $this withImage($value)
  */
 class ShopSnap extends Request
@@ -2796,6 +2806,7 @@ class XnbIndex extends Request
  * @method SecondhandCarCity secondhandCarCity() 估值支持的城市
  * @method SecondhandCarQuery secondhandCarQuery() 二手车估值
  * @method ShopSnap shopSnap() 拍照购
+ * @method SmsSend smsSend() 短信发送
  * @method StarIndex starIndex() 明星百科档案
  * @method SpringTravelQuery springTravelQuery() 疫情政策查询
  * @method SpringTravelCitys springTravelCitys() 疫情政策查询支持城市
