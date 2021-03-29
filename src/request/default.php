@@ -1798,6 +1798,7 @@ class SurnameIndex extends Request
 
 class SpringTravelCitys extends Request
 {
+    public $uri = 'spring_travel/citys';
 }
 
 /**
