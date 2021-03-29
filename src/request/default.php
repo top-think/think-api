@@ -1807,6 +1807,7 @@ class SpringTravelCitys extends Request
  */
 class SpringTravelQuery extends Request
 {
+    public $uri = 'spring_travel/query';
 }
 
 /**
@@ -1814,10 +1815,12 @@ class SpringTravelQuery extends Request
  */
 class SpringTravelHsjg extends Request
 {
+    public $uri = 'spring_travel/hsjg';
 }
 
 class SpringTravelRisk extends Request
 {
+    public $uri = 'spring_travel/risk';
 }
 
 /**
