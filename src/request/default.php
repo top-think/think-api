@@ -1770,6 +1770,14 @@ class SmsSend extends Request
 }
 
 /**
+ * @method $this withId($value)
+ */
+class SmsQueryStatus extends Request
+{
+    public $uri = 'sms/query_status';
+}
+
+/**
  * @method $this withImage($value)
  */
 class ShopSnap extends Request
@@ -2811,6 +2819,7 @@ class XnbIndex extends Request
  * @method SecondhandCarQuery secondhandCarQuery() 二手车估值
  * @method ShopSnap shopSnap() 拍照购
  * @method SmsSend smsSend() 短信发送
+ * @method SmsQueryStatus smsQueryStatus() 短信发送状态查询
  * @method StarIndex starIndex() 明星百科档案
  * @method SpringTravelQuery springTravelQuery() 疫情政策查询
  * @method SpringTravelCitys springTravelCitys() 疫情政策查询支持城市
