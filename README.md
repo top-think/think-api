@@ -30,7 +30,7 @@ $result = $client->idcardIndex()
 
 所有的接口服务和方法都支持IDE自动提示和完成（请务必注意方法大小写必须保持一致），基本上不需要文档即可完成接口开发工作，`ThinkAPI`所有的API调用服务必须设置`appCode`值，用于接口调用的身份认证。
 
->`AppCode`的值可以在[官方服务市场](https://market.topthink.com/)`->`个人中心`->`[API管理](https://market.topthink.com/setting/api)上方查询到，每个用户账号拥有一个唯一的`AppCode`值（请不要随意泄露）。
+>`AppCode`的值可以在[官方服务市场](https://market.topthink.com/)`->`我的服务`->`[安全信息](https://market.topthink.com/my/security)里面获取到，每个用户账号拥有一个唯一的`AppCode`值（请不要随意泄露）。
 
 该SDK服务仅支持官方已经接入的API接口（所有支持的接口都在官方[API市场](https://market.topthink.com/api)），目前接口数量正在扩充中，你可以联系我们反馈你需要的API接口，我们来统一进行接入。
 
