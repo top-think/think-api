@@ -799,6 +799,14 @@ class ImageGifDetect extends Request
 }
 
 /**
+ * @method $this withImg($value)
+ * @method $this withImgurl($value)
+ */
+class ImageScan extends Request
+{
+}
+
+/**
  * @method $this withIp($value)
  */
 class IpIndex extends Request
@@ -2536,6 +2544,28 @@ class WordSegment extends Request
 }
 
 /**
+ * @method $this withContent($value)
+ */
+class WordNlp extends Request
+{
+}
+
+/**
+ * @method $this withText1($value)
+ * @method $this withText2($value)
+ */
+class WordSimnet extends Request
+{
+}
+
+/**
+ * @method $this withContent($value)
+ */
+class WordEcnet extends Request
+{
+}
+
+/**
  * @method $this withWord($value)
  */
 class XinhuaQuery extends Request
@@ -2703,6 +2733,7 @@ class XnbIndex extends Request
  * @method IdcardAuth idcardAuth() 身份证二要素检测
  * @method ImageImgCensor imageImgCensor() 组合服务接口
  * @method ImageGifDetect imageGifDetect() GIF色情图像识别
+ * @method ImageScan imageScan() 图像智能识别
  * @method IpIndex ipIndex()
  * @method JdDetail jdDetail() 京东商品信息
  * @method JokeQuery jokeQuery() 根据时间戳返回该时间点前或后的笑话列表
@@ -2913,7 +2944,10 @@ class XnbIndex extends Request
  * @method WikiGodreply wikiGodreply() 神回复
  * @method WoolWcheck woolWcheck() 羊毛党检测
  * @method WoolWtag woolWtag() 羊毛党检测标签版
- * @method WordSegment wordSegment() 中文分词
+ * @method WordSegment wordSegment() 中文抽取关键词
+ * @method WordNlp wordNlp() 中文智能分词
+ * @method WordSimnet wordSimnet() 文本相似检测
+ * @method WordEcnet wordEcnet() 文本智能纠错
  * @method XinhuaQuery xinhuaQuery() 根据汉字查询相关信息，如拼音、读音、详解、五笔等
  * @method XinhuaBushou xinhuaBushou() 汉字部首列表大全，包含笔画信息
  * @method XinhuaPinyin xinhuaPinyin() 汉字拼音列表大全
