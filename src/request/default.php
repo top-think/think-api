@@ -1501,7 +1501,7 @@ class OcrBankcard extends Request
 
 /**
  * @method $this withImage($value)
- * @method $this withImageType($value)
+ * @method $this withFixMode($value)
  */
 class OcrBusinessLicense extends Request
 {
