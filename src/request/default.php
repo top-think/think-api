@@ -1650,7 +1650,7 @@ class ParkCityList extends Request
 /**
  * @method $this withNum($value)
  * @method $this withPage($value)
- * @method $this withWord($value)
+ * @method $this withName($value)
  * @method $this withType($value)
  */
 class PetIndex extends Request
