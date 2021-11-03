@@ -1865,7 +1865,21 @@ class TaobaoInfo extends Request
 /**
  * @method $this withId($value)
  */
+class TaobaoGood extends Request
+{
+}
+
+/**
+ * @method $this withId($value)
+ */
 class TaobaoImage extends Request
+{
+}
+
+/**
+ * @method $this withId($value)
+ */
+class TaobaoSale extends Request
 {
 }
 
@@ -2860,7 +2874,9 @@ class XnbIndex extends Request
  * @method TaobaoDetail taobaoDetail() 淘宝商品信息
  * @method TaobaoItem taobaoItem() 淘宝商品信息详情版
  * @method TaobaoInfo taobaoInfo() 淘宝商品信息轻量版
+ * @method TaobaoGood taobaoGood() 淘宝商品信息备用版
  * @method TaobaoImage taobaoImage() 淘宝商品详情图片
+ * @method TaobaoSale taobaoSale() 获取商品销售数据
  * @method TaobaoShop taobaoShop() 获取卖家店铺的基本信息
  * @method TaobaoAlibabaInfo taobaoAlibabaInfo() 阿里巴巴商品信息
  * @method TaobaokeQuery taobaokeQuery() 淘口令解析api接口
