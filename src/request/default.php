@@ -843,6 +843,18 @@ class JokeRand extends Request
 {
 }
 
+/**
+ * @method $this withInput($value)
+ * @method $this withUserid($value)
+ * @method $this withUserip($value)
+ * @method $this withCity($value)
+ * @method $this withLat($value)
+ * @method $this withLng($value)
+ */
+class LingjuChat extends Request
+{
+}
+
 class LifeTip extends Request
 {
 }
@@ -2029,14 +2041,6 @@ class TrashSearch extends Request
 }
 
 /**
- * @method $this withQuestion($value)
- * @method $this withUser($value)
- */
-class TulingIndex extends Request
-{
-}
-
-/**
  * @method $this withMobiles($value)
  * @method $this withType($value)
  */
@@ -2753,6 +2757,7 @@ class XnbIndex extends Request
  * @method JokeQuery jokeQuery() 根据时间戳返回该时间点前或后的笑话列表
  * @method JokeLatest jokeLatest() 获取最新的笑话
  * @method JokeRand jokeRand() 随机获取笑话
+ * @method LingjuChat lingjuChat() 灵聚ChatBot机器人
  * @method LifeTip lifeTip() 生活小窍门
  * @method LiteraryPoetry literaryPoetry() 唐诗三百首
  * @method LiteraryTang literaryTang() 唐诗大全
@@ -2895,7 +2900,6 @@ class XnbIndex extends Request
  * @method TrashVoice trashVoice() 语音识别垃圾分类
  * @method TrashImage trashImage() 图像识别垃圾分类
  * @method TrashSearch trashSearch() 名称识别垃圾分类
- * @method TulingIndex tulingIndex() 图灵机器人
  * @method UnnBatchUcheck unnBatchUcheck() 手机空号检测
  * @method UnnStatus unnStatus() 号码实时查询（基础版）
  * @method Verifybankcard3Query verifybankcard3Query()
