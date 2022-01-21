@@ -843,6 +843,18 @@ class JokeRand extends Request
 {
 }
 
+/**
+ * @method $this withInput($value)
+ * @method $this withUserid($value)
+ * @method $this withUserip($value)
+ * @method $this withCity($value)
+ * @method $this withLat($value)
+ * @method $this withLng($value)
+ */
+class LingjuChat extends Request
+{
+}
+
 class LifeTip extends Request
 {
 }
@@ -1501,7 +1513,7 @@ class OcrBankcard extends Request
 
 /**
  * @method $this withImage($value)
- * @method $this withImageType($value)
+ * @method $this withFixMode($value)
  */
 class OcrBusinessLicense extends Request
 {
@@ -1865,7 +1877,21 @@ class TaobaoInfo extends Request
 /**
  * @method $this withId($value)
  */
+class TaobaoGood extends Request
+{
+}
+
+/**
+ * @method $this withId($value)
+ */
 class TaobaoImage extends Request
+{
+}
+
+/**
+ * @method $this withId($value)
+ */
+class TaobaoSale extends Request
 {
 }
 
@@ -2011,14 +2037,6 @@ class TrashImage extends Request
  * @method $this withType($value)
  */
 class TrashSearch extends Request
-{
-}
-
-/**
- * @method $this withQuestion($value)
- * @method $this withUser($value)
- */
-class TulingIndex extends Request
 {
 }
 
@@ -2739,6 +2757,7 @@ class XnbIndex extends Request
  * @method JokeQuery jokeQuery() 根据时间戳返回该时间点前或后的笑话列表
  * @method JokeLatest jokeLatest() 获取最新的笑话
  * @method JokeRand jokeRand() 随机获取笑话
+ * @method LingjuChat lingjuChat() 灵聚ChatBot机器人
  * @method LifeTip lifeTip() 生活小窍门
  * @method LiteraryPoetry literaryPoetry() 唐诗三百首
  * @method LiteraryTang literaryTang() 唐诗大全
@@ -2860,7 +2879,9 @@ class XnbIndex extends Request
  * @method TaobaoDetail taobaoDetail() 淘宝商品信息
  * @method TaobaoItem taobaoItem() 淘宝商品信息详情版
  * @method TaobaoInfo taobaoInfo() 淘宝商品信息轻量版
+ * @method TaobaoGood taobaoGood() 淘宝商品信息备用版
  * @method TaobaoImage taobaoImage() 淘宝商品详情图片
+ * @method TaobaoSale taobaoSale() 获取商品销售数据
  * @method TaobaoShop taobaoShop() 获取卖家店铺的基本信息
  * @method TaobaoAlibabaInfo taobaoAlibabaInfo() 阿里巴巴商品信息
  * @method TaobaokeQuery taobaokeQuery() 淘口令解析api接口
@@ -2879,7 +2900,6 @@ class XnbIndex extends Request
  * @method TrashVoice trashVoice() 语音识别垃圾分类
  * @method TrashImage trashImage() 图像识别垃圾分类
  * @method TrashSearch trashSearch() 名称识别垃圾分类
- * @method TulingIndex tulingIndex() 图灵机器人
  * @method UnnBatchUcheck unnBatchUcheck() 手机空号检测
  * @method UnnStatus unnStatus() 号码实时查询（基础版）
  * @method Verifybankcard3Query verifybankcard3Query()
