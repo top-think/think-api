@@ -1992,6 +1992,14 @@ class TimeWorld extends Request
 }
 
 /**
+ * @method $this withText($value)
+ * @method $this withType($value)
+ */
+class ThinkAudit extends Request
+{
+}
+
+/**
  * @method $this withDate($value)
  */
 class TodayEvent extends Request
@@ -2894,6 +2902,7 @@ class XnbIndex extends Request
  * @method TimeLunar timeLunar() 二十四节气
  * @method TimeHoliday timeHoliday() 节假日
  * @method TimeWorld timeWorld() 全球时间查询
+ * @method ThinkAudit thinkAudit() 高效过滤涉政暴恐、色情低俗、恶意营销、广告等不良信息，杜绝平台内容违规风险
  * @method TodayEvent todayEvent() 根据日期查询事件（列表）
  * @method TodayDetail todayDetail() 根据事件id查询详细信息
  * @method TrashIndex trashIndex() 垃圾分类
