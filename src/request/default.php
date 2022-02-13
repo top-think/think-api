@@ -1798,6 +1798,78 @@ class SmsQueryStatus extends Request
 }
 
 /**
+ * @method $this withName($value)
+ * @method $this withRemark($value)
+ */
+class SmsAddSign extends Request
+{
+    public $uri = 'sms/add_sign';
+}
+
+/**
+ * @method $this withId($value)
+ */
+class SmsQuerySign extends Request
+{
+    public $uri = 'sms/query_sign';
+}
+
+/**
+ * @method $this withId($value)
+ * @method $this withName($value)
+ * @method $this withRemark($value)
+ */
+class SmsModifySign extends Request
+{
+    public $uri = 'sms/modify_sign';
+}
+
+/**
+ * @method $this withId($value)
+ */
+class SmsDeleteSign extends Request
+{
+    public $uri = 'sms/delete_sign';
+}
+
+/**
+ * @method $this withName($value)
+ * @method $this withContent($value)
+ * @method $this withRemark($value)
+ */
+class SmsAddTemplate extends Request
+{
+    public $uri = 'sms/add_template';
+}
+
+/**
+ * @method $this withId($value)
+ */
+class SmsQueryTemplate extends Request
+{
+    public $uri = 'sms/query_template';
+}
+
+/**
+ * @method $this withId($value)
+ * @method $this withName($value)
+ * @method $this withContent($value)
+ * @method $this withRemark($value)
+ */
+class SmsModifyTemplate extends Request
+{
+    public $uri = 'sms/modify_template';
+}
+
+/**
+ * @method $this withId($value)
+ */
+class SmsDeleteTemplate extends Request
+{
+    public $uri = 'sms/delete_template';
+}
+
+/**
  * @method $this withImage($value)
  */
 class ShopSnap extends Request
@@ -2878,6 +2950,14 @@ class XnbIndex extends Request
  * @method ShopSnap shopSnap() 拍照购
  * @method SmsSend smsSend() 短信发送
  * @method SmsQueryStatus smsQueryStatus() 短信发送状态查询
+ * @method SmsAddSign smsAddSign() 短信签名申请
+ * @method SmsQuerySign smsQuerySign() 短信签名审核状态查询
+ * @method SmsModifySign smsModifySign() 修改短信签名
+ * @method SmsDeleteSign smsDeleteSign() 删除短信签名
+ * @method SmsAddTemplate smsAddTemplate() 短信模板申请
+ * @method SmsQueryTemplate smsQueryTemplate() 短信模板审核状态查询
+ * @method SmsModifyTemplate smsModifyTemplate() 修改短信模板
+ * @method SmsDeleteTemplate smsDeleteTemplate() 删除短信模板
  * @method StarIndex starIndex() 明星百科档案
  * @method SpringTravelQuery springTravelQuery() 疫情政策查询
  * @method SpringTravelCitys springTravelCitys() 疫情政策查询支持城市
