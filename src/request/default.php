@@ -1224,6 +1224,15 @@ class NewsSicprobe extends Request
 
 /**
  * @method $this withNum($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
+class NewsGame extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
  * @method $this withSource($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
@@ -2883,6 +2892,7 @@ class XnbIndex extends Request
  * @method NewsHouse newsHouse() 区块链新闻
  * @method NewsBlockchain newsBlockchain() 区块链新闻
  * @method NewsSicprobe newsSicprobe() 科学探索
+ * @method NewsGame newsGame() 游戏资讯
  * @method NewsGeneral newsGeneral() 综合新闻
  * @method NewsTop newsTop() 今日头条新闻
  * @method NewsArea newsArea() 地区新闻
