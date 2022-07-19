@@ -815,6 +815,55 @@ class IpIndex extends Request
 }
 
 /**
+ * @method $this withIp($value)
+ * @method $this withArea($value)
+ * @method $this withCoordsys($value)
+ */
+class IpPolice extends Request
+{
+}
+
+/**
+ * @method $this withIp($value)
+ * @method $this withArea($value)
+ * @method $this withCoordsys($value)
+ */
+class IpStreet extends Request
+{
+}
+
+/**
+ * @method $this withIp($value)
+ * @method $this withCoordsys($value)
+ */
+class IpDistrict extends Request
+{
+}
+
+/**
+ * @method $this withIp($value)
+ * @method $this withCoordsys($value)
+ */
+class IpCity extends Request
+{
+}
+
+/**
+ * @method $this withIp($value)
+ * @method $this withCoordsys($value)
+ */
+class IpIpv6 extends Request
+{
+}
+
+/**
+ * @method $this withIp($value)
+ */
+class IpScene extends Request
+{
+}
+
+/**
  * @method $this withId($value)
  */
 class JdDetail extends Request
@@ -2842,6 +2891,12 @@ class XnbIndex extends Request
  * @method ImageGifDetect imageGifDetect() GIF色情图像识别
  * @method ImageScan imageScan() 图像智能识别
  * @method IpIndex ipIndex()
+ * @method IpPolice ipPolice() IP定位-高精准公安版
+ * @method IpStreet ipStreet() IP定位-高精准商业版
+ * @method IpDistrict ipDistrict() IP定位-区县级
+ * @method IpCity ipCity() IP定位-城市级
+ * @method IpIpv6 ipIpv6() IPv6定位-城市级
+ * @method IpScene ipScene() IP应用场景
  * @method JdDetail jdDetail() 京东商品信息
  * @method JokeQuery jokeQuery() 根据时间戳返回该时间点前或后的笑话列表
  * @method JokeLatest jokeLatest() 获取最新的笑话
