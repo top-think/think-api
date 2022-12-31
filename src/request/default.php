@@ -610,6 +610,24 @@ class ExpressAddress extends Request
 }
 
 /**
+ * @method $this withIdcard($value)
+ * @method $this withName($value)
+ * @method $this withCallbackUrl($value)
+ * @method $this withNotifyUrl($value)
+ * @method $this withFaceauthMode($value)
+ */
+class FaceDetect extends Request
+{
+}
+
+/**
+ * @method $this withOrderNumber($value)
+ */
+class FaceQuery extends Request
+{
+}
+
+/**
  * @method $this withText($value)
  * @method $this withTo($value)
  */
@@ -776,14 +794,8 @@ class IdcardAuth extends Request
 }
 
 /**
- * @method $this withImage($value)
- * @method $this withPolitician($value)
- * @method $this withAntiporn($value)
- * @method $this withTerror($value)
- * @method $this withAntiSpam($value)
- * @method $this withDisgust($value)
- * @method $this withWatermark($value)
- * @method $this withQuality($value)
+ * @method $this withImageUrl($value)
+ * @method $this withBizType($value)
  */
 class ImageImgCensor extends Request
 {
@@ -892,19 +904,19 @@ class JokeRand extends Request
 {
 }
 
+class LifeTip extends Request
+{
+}
+
 /**
- * @method $this withInput($value)
  * @method $this withUserid($value)
  * @method $this withUserip($value)
+ * @method $this withInput($value)
  * @method $this withCity($value)
  * @method $this withLat($value)
  * @method $this withLng($value)
  */
 class LingjuChat extends Request
-{
-}
-
-class LifeTip extends Request
 {
 }
 
@@ -1273,15 +1285,6 @@ class NewsSicprobe extends Request
 
 /**
  * @method $this withNum($value)
- * @method $this withPage($value)
- * @method $this withWord($value)
- */
-class NewsGame extends Request
-{
-}
-
-/**
- * @method $this withNum($value)
  * @method $this withSource($value)
  * @method $this withPage($value)
  * @method $this withWord($value)
@@ -1539,6 +1542,15 @@ class NewsInternal extends Request
  * @method $this withPage($value)
  * @method $this withWord($value)
  */
+class NewsGame extends Request
+{
+}
+
+/**
+ * @method $this withNum($value)
+ * @method $this withPage($value)
+ * @method $this withWord($value)
+ */
 class NewsSocial extends Request
 {
 }
@@ -1567,15 +1579,6 @@ class OcrIdOcr extends Request
  */
 class OcrBankcard extends Request
 {
-}
-
-/**
- * @method $this withImage($value)
- * @method $this withFixMode($value)
- */
-class OcrBusinessLicense extends Request
-{
-    public $uri = 'ocr/business_license';
 }
 
 /**
@@ -1629,6 +1632,15 @@ class OcrHand extends Request
 class OcrIdCardText extends Request
 {
     public $uri = 'ocr/id_card_text';
+}
+
+/**
+ * @method $this withImage($value)
+ * @method $this withFixMode($value)
+ */
+class OcrBusinessLicense extends Request
+{
+    public $uri = 'ocr/business_license';
 }
 
 /**
@@ -1838,6 +1850,13 @@ class SecondhandCarQuery extends Request
 }
 
 /**
+ * @method $this withImage($value)
+ */
+class ShopSnap extends Request
+{
+}
+
+/**
  * @method $this withSignId($value)
  * @method $this withTemplateId($value)
  * @method $this withPhone($value)
@@ -1927,33 +1946,6 @@ class SmsDeleteTemplate extends Request
     public $uri = 'sms/delete_template';
 }
 
-/**
- * @method $this withImage($value)
- */
-class ShopSnap extends Request
-{
-}
-
-/**
- * @method $this withName($value)
- * @method $this withSex($value)
- * @method $this withNation($value)
- * @method $this withBirth($value)
- * @method $this withConstellation($value)
- * @method $this withPage($value)
- * @method $this withNum($value)
- */
-class StarIndex extends Request
-{
-}
-
-/**
- * @method $this withXing($value)
- */
-class SurnameIndex extends Request
-{
-}
-
 class SpringTravelCitys extends Request
 {
     public $uri = 'spring_travel/citys';
@@ -1976,9 +1968,32 @@ class SpringTravelHsjg extends Request
     public $uri = 'spring_travel/hsjg';
 }
 
+/**
+ * @method $this withFid($value)
+ */
 class SpringTravelRisk extends Request
 {
     public $uri = 'spring_travel/risk';
+}
+
+/**
+ * @method $this withName($value)
+ * @method $this withSex($value)
+ * @method $this withNation($value)
+ * @method $this withBirth($value)
+ * @method $this withConstellation($value)
+ * @method $this withPage($value)
+ * @method $this withNum($value)
+ */
+class StarIndex extends Request
+{
+}
+
+/**
+ * @method $this withXing($value)
+ */
+class SurnameIndex extends Request
+{
 }
 
 /**
@@ -2014,14 +2029,14 @@ class TaobaoGood extends Request
 /**
  * @method $this withId($value)
  */
-class TaobaoImage extends Request
+class TaobaoSale extends Request
 {
 }
 
 /**
  * @method $this withId($value)
  */
-class TaobaoSale extends Request
+class TaobaoImage extends Request
 {
 }
 
@@ -2100,6 +2115,26 @@ class TelecomCodes extends Request
 }
 
 /**
+ * @method $this withUserid($value)
+ * @method $this withUserip($value)
+ * @method $this withInput($value)
+ * @method $this withCity($value)
+ * @method $this withLat($value)
+ * @method $this withLng($value)
+ */
+class ThinkChat extends Request
+{
+}
+
+/**
+ * @method $this withText($value)
+ * @method $this withType($value)
+ */
+class ThinkAudit extends Request
+{
+}
+
+/**
  * @method $this withWord($value)
  */
 class TimeLunar extends Request
@@ -2118,14 +2153,6 @@ class TimeHoliday extends Request
  * @method $this withCity($value)
  */
 class TimeWorld extends Request
-{
-}
-
-/**
- * @method $this withText($value)
- * @method $this withType($value)
- */
-class ThinkAudit extends Request
 {
 }
 
@@ -2179,6 +2206,14 @@ class TrashSearch extends Request
 }
 
 /**
+ * @method $this withQuestion($value)
+ * @method $this withUser($value)
+ */
+class TulingIndex extends Request
+{
+}
+
+/**
  * @method $this withMobiles($value)
  * @method $this withType($value)
  */
@@ -2192,6 +2227,32 @@ class UnnBatchUcheck extends Request
  * @method $this withOrderNo($value)
  */
 class UnnStatus extends Request
+{
+}
+
+class VercodesmsTplList extends Request
+{
+    public $uri = 'vercodesms/tpl_list';
+}
+
+/**
+ * @method $this withTplcode($value)
+ * @method $this withSignature($value)
+ */
+class VercodesmsSignature extends Request
+{
+}
+
+/**
+ * @method $this withMobile($value)
+ * @method $this withTplId($value)
+ * @method $this withTplValue($value)
+ */
+class VercodesmsSend extends Request
+{
+}
+
+class VercodesmsLists extends Request
 {
 }
 
@@ -2831,7 +2892,7 @@ class XnbIndex extends Request
  * @method CarQuery carQuery() 查询车辆详细信息
  * @method CarLimit carLimit() 尾号限行
  * @method CarVin carVin() VIN码查询
- * @method CarVinPro carVinPro() VIN码查询-专业版
+ * @method CarVinPro carVinPro() VIN码查询-精准版
  * @method CharConvert charConvert() 转换字符串至简体、繁体、火星文，每次最多支持100个字符
  * @method ChengyuQuery chengyuQuery() 根据成语查询详细信息，如：详解、同义词、反义词、读音等信息
  * @method ChengyuAllusion chengyuAllusion() 成语典故
@@ -2864,6 +2925,8 @@ class XnbIndex extends Request
  * @method ExpressExpList expressExpList() 快递公司列表
  * @method ExpressDot expressDot() 网点查询
  * @method ExpressAddress expressAddress() 收货信息智能解析
+ * @method FaceDetect faceDetect() 发起人脸识别
+ * @method FaceQuery faceQuery() 查询人脸识别结果
  * @method FanyiIndex fanyiIndex() 语言翻译
  * @method FlightQuery flightQuery() 实时起降信息查询
  * @method FlightHistory flightHistory() 历史起降信息查询
@@ -2890,7 +2953,7 @@ class XnbIndex extends Request
  * @method ImageImgCensor imageImgCensor() 组合服务接口
  * @method ImageGifDetect imageGifDetect() GIF色情图像识别
  * @method ImageScan imageScan() 图像智能识别
- * @method IpIndex ipIndex()
+ * @method IpIndex ipIndex() IP免费查询
  * @method IpPolice ipPolice() IP定位-高精准公安版
  * @method IpStreet ipStreet() IP定位-高精准商业版
  * @method IpDistrict ipDistrict() IP定位-区县级
@@ -2901,8 +2964,8 @@ class XnbIndex extends Request
  * @method JokeQuery jokeQuery() 根据时间戳返回该时间点前或后的笑话列表
  * @method JokeLatest jokeLatest() 获取最新的笑话
  * @method JokeRand jokeRand() 随机获取笑话
- * @method LingjuChat lingjuChat() 灵聚ChatBot机器人
  * @method LifeTip lifeTip() 生活小窍门
+ * @method LingjuChat lingjuChat() 灵聚机器人
  * @method LiteraryPoetry literaryPoetry() 唐诗三百首
  * @method LiteraryTang literaryTang() 唐诗大全
  * @method LiterarySong literarySong() 精选宋词
@@ -2947,7 +3010,6 @@ class XnbIndex extends Request
  * @method NewsHouse newsHouse() 区块链新闻
  * @method NewsBlockchain newsBlockchain() 区块链新闻
  * @method NewsSicprobe newsSicprobe() 科学探索
- * @method NewsGame newsGame() 游戏资讯
  * @method NewsGeneral newsGeneral() 综合新闻
  * @method NewsTop newsTop() 今日头条新闻
  * @method NewsArea newsArea() 地区新闻
@@ -2976,17 +3038,18 @@ class XnbIndex extends Request
  * @method NewsFun newsFun() 娱乐新闻
  * @method NewsWorld newsWorld() 国际新闻
  * @method NewsInternal newsInternal() 国内新闻
+ * @method NewsGame newsGame() 游戏新闻
  * @method NewsSocial newsSocial() 社会新闻
  * @method OcrIdcard ocrIdcard()
  * @method OcrIdOcr ocrIdOcr() 身份证OCR
  * @method OcrBankcard ocrBankcard() 银行卡OCR
- * @method OcrBusinessLicense ocrBusinessLicense() 营业执照OCR
  * @method OcrDrivingLicense ocrDrivingLicense() 驾驶证
  * @method OcrVehicleLicense ocrVehicleLicense() 行驶证
  * @method OcrPassport ocrPassport() 护照
  * @method OcrInvoice ocrInvoice() 增值税发票
  * @method OcrHand ocrHand() 手写OCR
  * @method OcrIdCardText ocrIdCardText() 身份证文字识别
+ * @method OcrBusinessLicense ocrBusinessLicense() 营业执照文字识别
  * @method OcrFace ocrFace() 人脸识别
  * @method OcrTxt ocrTxt() 通用文字识别
  * @method OcrArithmetic ocrArithmetic() 算式识别
@@ -3013,28 +3076,28 @@ class XnbIndex extends Request
  * @method SecondhandCarCity secondhandCarCity() 估值支持的城市
  * @method SecondhandCarQuery secondhandCarQuery() 二手车估值
  * @method ShopSnap shopSnap() 拍照购
- * @method SmsSend smsSend() 短信发送
- * @method SmsQueryStatus smsQueryStatus() 短信发送状态查询
- * @method SmsAddSign smsAddSign() 短信签名申请
- * @method SmsQuerySign smsQuerySign() 短信签名审核状态查询
- * @method SmsModifySign smsModifySign() 修改短信签名
- * @method SmsDeleteSign smsDeleteSign() 删除短信签名
- * @method SmsAddTemplate smsAddTemplate() 短信模板申请
- * @method SmsQueryTemplate smsQueryTemplate() 短信模板审核状态查询
- * @method SmsModifyTemplate smsModifyTemplate() 修改短信模板
- * @method SmsDeleteTemplate smsDeleteTemplate() 删除短信模板
+ * @method SmsSend smsSend() 发送短信
+ * @method SmsQueryStatus smsQueryStatus() 查询发送状态
+ * @method SmsAddSign smsAddSign() 添加签名
+ * @method SmsQuerySign smsQuerySign() 获取签名
+ * @method SmsModifySign smsModifySign() 修改签名
+ * @method SmsDeleteSign smsDeleteSign() 删除签名
+ * @method SmsAddTemplate smsAddTemplate() 添加模板
+ * @method SmsQueryTemplate smsQueryTemplate() 获取模板
+ * @method SmsModifyTemplate smsModifyTemplate() 修改模板
+ * @method SmsDeleteTemplate smsDeleteTemplate() 删除模板
+ * @method SpringTravelCitys springTravelCitys() 支持城市清单查询
+ * @method SpringTravelQuery springTravelQuery() 根据出入城市，查询出行防疫政策
+ * @method SpringTravelHsjg springTravelHsjg() 根据城市ID查询核酸检测机构,数据来源卫健委发布整理,更新同步可能有延迟,具体以实际为准.
+ * @method SpringTravelRisk springTravelRisk() 全国中高风险地区查询
  * @method StarIndex starIndex() 明星百科档案
- * @method SpringTravelQuery springTravelQuery() 疫情政策查询
- * @method SpringTravelCitys springTravelCitys() 疫情政策查询支持城市
- * @method SpringTravelHsjg springTravelHsjg() 城市核酸检测机构
- * @method SpringTravelRisk springTravelRisk() 疫情风险地区查询
  * @method SurnameIndex surnameIndex() 姓氏起源
  * @method TaobaoDetail taobaoDetail() 淘宝商品信息
  * @method TaobaoItem taobaoItem() 淘宝商品信息详情版
  * @method TaobaoInfo taobaoInfo() 淘宝商品信息轻量版
- * @method TaobaoGood taobaoGood() 淘宝商品信息备用版
+ * @method TaobaoGood taobaoGood() 淘宝商品信息V2版
+ * @method TaobaoSale taobaoSale() 淘宝天猫商品销量
  * @method TaobaoImage taobaoImage() 淘宝商品详情图片
- * @method TaobaoSale taobaoSale() 获取商品销售数据
  * @method TaobaoShop taobaoShop() 获取卖家店铺的基本信息
  * @method TaobaoAlibabaInfo taobaoAlibabaInfo() 阿里巴巴商品信息
  * @method TaobaokeQuery taobaokeQuery() 淘口令解析api接口
@@ -3044,18 +3107,24 @@ class XnbIndex extends Request
  * @method TelecomLocation telecomLocation() 手机号码归属地查询
  * @method TelecomIdentify telecomIdentify() 查询手机/固话号码归属地，是否诈骗、营销、广告电话
  * @method TelecomCodes telecomCodes() 根据传入的字符返回标准电码
+ * @method ThinkChat thinkChat() 聊天机器人
+ * @method ThinkAudit thinkAudit() 全面实时内容审核 高效过滤涉政暴恐、色情低俗、恶意营销、广告等不良信息，杜绝平台内容违规风险
  * @method TimeLunar timeLunar() 二十四节气
  * @method TimeHoliday timeHoliday() 节假日
  * @method TimeWorld timeWorld() 全球时间查询
- * @method ThinkAudit thinkAudit() 高效过滤涉政暴恐、色情低俗、恶意营销、广告等不良信息，杜绝平台内容违规风险
  * @method TodayEvent todayEvent() 根据日期查询事件（列表）
  * @method TodayDetail todayDetail() 根据事件id查询详细信息
  * @method TrashIndex trashIndex() 垃圾分类
  * @method TrashVoice trashVoice() 语音识别垃圾分类
  * @method TrashImage trashImage() 图像识别垃圾分类
  * @method TrashSearch trashSearch() 名称识别垃圾分类
+ * @method TulingIndex tulingIndex() 图灵机器人
  * @method UnnBatchUcheck unnBatchUcheck() 手机空号检测
  * @method UnnStatus unnStatus() 号码实时查询（基础版）
+ * @method VercodesmsTplList vercodesmsTplList() 可选模板列表
+ * @method VercodesmsSignature vercodesmsSignature() 提交短信模板
+ * @method VercodesmsSend vercodesmsSend() 发送验证码短信
+ * @method VercodesmsLists vercodesmsLists() 模板签名列表
  * @method Verifybankcard3Query verifybankcard3Query()
  * @method Verifybankcard4Query verifybankcard4Query()
  * @method WeatherCoords weatherCoords() 根据名坐标查询天气
@@ -3118,9 +3187,9 @@ class XnbIndex extends Request
  * @method WikiGodreply wikiGodreply() 神回复
  * @method WoolWcheck woolWcheck() 羊毛党检测
  * @method WoolWtag woolWtag() 羊毛党检测标签版
- * @method WordSegment wordSegment() 中文抽取关键词
- * @method WordNlp wordNlp() 中文智能分词
- * @method WordSimnet wordSimnet() 文本相似检测
+ * @method WordSegment wordSegment() 中文分词
+ * @method WordNlp wordNlp() 智能分词
+ * @method WordSimnet wordSimnet() 相似文本检测
  * @method WordEcnet wordEcnet() 文本智能纠错
  * @method XinhuaQuery xinhuaQuery() 根据汉字查询相关信息，如拼音、读音、详解、五笔等
  * @method XinhuaBushou xinhuaBushou() 汉字部首列表大全，包含笔画信息
