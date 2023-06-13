@@ -283,88 +283,6 @@ class CaptchaAlgorism extends Request
 }
 
 /**
- * @method $this withFirstLetter($value)
- */
-class CarBrand extends Request
-{
-}
-
-/**
- * @method $this withBrandid($value)
- * @method $this withLevelid($value)
- */
-class CarSeries extends Request
-{
-}
-
-/**
- * @method $this withSeriesId($value)
- * @method $this withYear($value)
- */
-class CarModels extends Request
-{
-}
-
-/**
- * @method $this withCode($value)
- */
-class CarObd extends Request
-{
-}
-
-/**
- * @method $this withCity($value)
- * @method $this withKeywords($value)
- * @method $this withPage($value)
- * @method $this withFormat($value)
- */
-class CarRegion extends Request
-{
-}
-
-/**
- * @method $this withLon($value)
- * @method $this withLat($value)
- * @method $this withPage($value)
- * @method $this withFormat($value)
- * @method $this withR($value)
- */
-class CarNearby extends Request
-{
-}
-
-/**
- * @method $this withCarNumber($value)
- * @method $this withCarType($value)
- */
-class CarQuery extends Request
-{
-}
-
-/**
- * @method $this withDayNum($value)
- * @method $this withCity($value)
- */
-class CarLimit extends Request
-{
-}
-
-/**
- * @method $this withVin($value)
- */
-class CarVin extends Request
-{
-}
-
-/**
- * @method $this withVin($value)
- */
-class CarVinPro extends Request
-{
-    public $uri = 'car/vin_pro';
-}
-
-/**
  * @method $this withText($value)
  * @method $this withType($value)
  */
@@ -400,6 +318,23 @@ class ChengyuGuess extends Request
 }
 
 /**
+ * @method $this withContent($value)
+ */
+class CmsText extends Request
+{
+}
+
+/**
+ * @method $this withContent($value)
+ * @method $this withUrl($value)
+ * @method $this withInterval($value)
+ * @method $this withMaxFrames($value)
+ */
+class CmsImage extends Request
+{
+}
+
+/**
  * @method $this withConsName($value)
  * @method $this withType($value)
  */
@@ -423,6 +358,9 @@ class ConstellationZodiac extends Request
 {
 }
 
+/**
+ * @method $this withFid($value)
+ */
 class DreamCategory extends Request
 {
 }
@@ -828,8 +766,8 @@ class IpIndex extends Request
 
 /**
  * @method $this withIp($value)
- * @method $this withArea($value)
  * @method $this withCoordsys($value)
+ * @method $this withArea($value)
  */
 class IpPolice extends Request
 {
@@ -837,8 +775,8 @@ class IpPolice extends Request
 
 /**
  * @method $this withIp($value)
- * @method $this withArea($value)
  * @method $this withCoordsys($value)
+ * @method $this withArea($value)
  */
 class IpStreet extends Request
 {
@@ -876,17 +814,10 @@ class IpScene extends Request
 }
 
 /**
- * @method $this withId($value)
- */
-class JdDetail extends Request
-{
-}
-
-/**
  * @method $this withSort($value)
+ * @method $this withTime($value)
  * @method $this withPage($value)
  * @method $this withPagesize($value)
- * @method $this withTime($value)
  */
 class JokeQuery extends Request
 {
@@ -1795,6 +1726,23 @@ class QrcodeCodec extends Request
 }
 
 /**
+ * @method $this withScene($value)
+ * @method $this withMobile($value)
+ * @method $this withUserIp($value)
+ * @method $this withPostTime($value)
+ * @method $this withUserId($value)
+ * @method $this withNickname($value)
+ * @method $this withEmail($value)
+ * @method $this withCookieHash($value)
+ * @method $this withReferer($value)
+ * @method $this withUserAgent($value)
+ * @method $this withMac($value)
+ */
+class RceDetect extends Request
+{
+}
+
+/**
  * @method $this withWord($value)
  * @method $this withNum($value)
  * @method $this withPage($value)
@@ -1850,13 +1798,6 @@ class SecondhandCarQuery extends Request
 }
 
 /**
- * @method $this withImage($value)
- */
-class ShopSnap extends Request
-{
-}
-
-/**
  * @method $this withSignId($value)
  * @method $this withTemplateId($value)
  * @method $this withPhone($value)
@@ -1876,6 +1817,7 @@ class SmsQueryStatus extends Request
 
 /**
  * @method $this withName($value)
+ * @method $this withSource($value)
  * @method $this withRemark($value)
  */
 class SmsAddSign extends Request
@@ -1894,6 +1836,7 @@ class SmsQuerySign extends Request
 /**
  * @method $this withId($value)
  * @method $this withName($value)
+ * @method $this withSource($value)
  * @method $this withRemark($value)
  */
 class SmsModifySign extends Request
@@ -1911,6 +1854,7 @@ class SmsDeleteSign extends Request
 
 /**
  * @method $this withName($value)
+ * @method $this withSignId($value)
  * @method $this withContent($value)
  * @method $this withRemark($value)
  */
@@ -1930,6 +1874,7 @@ class SmsQueryTemplate extends Request
 /**
  * @method $this withId($value)
  * @method $this withName($value)
+ * @method $this withSignId($value)
  * @method $this withContent($value)
  * @method $this withRemark($value)
  */
@@ -1944,36 +1889,6 @@ class SmsModifyTemplate extends Request
 class SmsDeleteTemplate extends Request
 {
     public $uri = 'sms/delete_template';
-}
-
-class SpringTravelCitys extends Request
-{
-    public $uri = 'spring_travel/citys';
-}
-
-/**
- * @method $this withFrom($value)
- * @method $this withTo($value)
- */
-class SpringTravelQuery extends Request
-{
-    public $uri = 'spring_travel/query';
-}
-
-/**
- * @method $this withCityId($value)
- */
-class SpringTravelHsjg extends Request
-{
-    public $uri = 'spring_travel/hsjg';
-}
-
-/**
- * @method $this withFid($value)
- */
-class SpringTravelRisk extends Request
-{
-    public $uri = 'spring_travel/risk';
 }
 
 /**
@@ -1994,65 +1909,6 @@ class StarIndex extends Request
  */
 class SurnameIndex extends Request
 {
-}
-
-/**
- * @method $this withId($value)
- */
-class TaobaoDetail extends Request
-{
-}
-
-/**
- * @method $this withId($value)
- * @method $this withInfo($value)
- * @method $this withAreaId($value)
- */
-class TaobaoItem extends Request
-{
-}
-
-/**
- * @method $this withId($value)
- */
-class TaobaoInfo extends Request
-{
-}
-
-/**
- * @method $this withId($value)
- */
-class TaobaoGood extends Request
-{
-}
-
-/**
- * @method $this withId($value)
- */
-class TaobaoSale extends Request
-{
-}
-
-/**
- * @method $this withId($value)
- */
-class TaobaoImage extends Request
-{
-}
-
-/**
- * @method $this withItemId($value)
- */
-class TaobaoShop extends Request
-{
-}
-
-/**
- * @method $this withItemId($value)
- */
-class TaobaoAlibabaInfo extends Request
-{
-    public $uri = 'taobao/alibaba_info';
 }
 
 /**
@@ -2215,7 +2071,6 @@ class TulingIndex extends Request
 
 /**
  * @method $this withMobiles($value)
- * @method $this withType($value)
  */
 class UnnBatchUcheck extends Request
 {
@@ -2439,20 +2294,6 @@ class WebsiteQq extends Request
 }
 
 /**
- * @method $this withUrl($value)
- */
-class WebsiteCheatlink extends Request
-{
-}
-
-/**
- * @method $this withIp($value)
- */
-class WebsiteCheatip extends Request
-{
-}
-
-/**
  * @method $this withContent($value)
  */
 class WebsiteAntispam extends Request
@@ -2470,20 +2311,6 @@ class WebsiteAdreview extends Request
  * @method $this withImgurl($value)
  */
 class WebsiteImgcensor extends Request
-{
-}
-
-/**
- * @method $this withLinks($value)
- */
-class WebsiteSurl extends Request
-{
-}
-
-/**
- * @method $this withUrl($value)
- */
-class WebsiteShorturl extends Request
 {
 }
 
@@ -2610,15 +2437,6 @@ class WebsiteHtmlpic extends Request
  * @method $this withUrl($value)
  */
 class WebsiteHtmltext extends Request
-{
-}
-
-/**
- * @method $this withUrl($value)
- * @method $this withType($value)
- * @method $this withWidth($value)
- */
-class WebsiteUrl2pic extends Request
 {
 }
 
@@ -2842,10 +2660,6 @@ class XinhuaConvertPy extends Request
     public $uri = 'xinhua/convert_py';
 }
 
-class XnbIndex extends Request
-{
-}
-
 /**
  * @method AirSearch airSearch() 城市空气质量指数查询
  * @method AirPm airPm() 城市空气PM2.5查询
@@ -2871,7 +2685,7 @@ class XnbIndex extends Request
  * @method BankcardAuth bankcardAuth() 银行卡四要素标准版
  * @method BankcardAuthDetail bankcardAuthDetail() 银行卡四要素详情版
  * @method BankcardAuthSecret bankcardAuthSecret() 银行卡四要素加密版
- * @method BarcodeQuery barcodeQuery()
+ * @method BarcodeQuery barcodeQuery() 查询条形码
  * @method BmiIndex bmiIndex() bmi查询
  * @method BookCatalog bookCatalog() 图书分类目录
  * @method BookQuery bookQuery() 查询图书数据
@@ -2883,21 +2697,13 @@ class XnbIndex extends Request
  * @method CaptchaNumber captchaNumber() 识别数字、英文验证码
  * @method CaptchaChinese captchaChinese() 识别中英文验证码
  * @method CaptchaAlgorism captchaAlgorism() 算式验证码识别
- * @method CarBrand carBrand() 返回车辆品牌所有列表，或更具中文拼音首字母查询品牌列表
- * @method CarSeries carSeries() 根据车辆品牌ID查询旗下车系列表
- * @method CarModels carModels() 根据车系id查询旗下车型列表
- * @method CarObd carObd() 通过OBD故障码查询相关信息
- * @method CarRegion carRegion() 按城市检索加油站
- * @method CarNearby carNearby() 附近加油站
- * @method CarQuery carQuery() 查询车辆详细信息
- * @method CarLimit carLimit() 尾号限行
- * @method CarVin carVin() VIN码查询
- * @method CarVinPro carVinPro() VIN码查询-精准版
  * @method CharConvert charConvert() 转换字符串至简体、繁体、火星文，每次最多支持100个字符
  * @method ChengyuQuery chengyuQuery() 根据成语查询详细信息，如：详解、同义词、反义词、读音等信息
  * @method ChengyuAllusion chengyuAllusion() 成语典故
  * @method ChengyuJielong chengyuJielong() 成语接龙
  * @method ChengyuGuess chengyuGuess() 猜成语
+ * @method CmsText cmsText() 文本内容安全检测
+ * @method CmsImage cmsImage() 图片内容安全检测
  * @method ConstellationQuery constellationQuery() 十二星座的今日运势
  * @method ConstellationMatch constellationMatch() 查询星座配对
  * @method ConstellationZodiac constellationZodiac() 查询生肖配对
@@ -2960,7 +2766,6 @@ class XnbIndex extends Request
  * @method IpCity ipCity() IP定位-城市级
  * @method IpIpv6 ipIpv6() IPv6定位-城市级
  * @method IpScene ipScene() IP应用场景
- * @method JdDetail jdDetail() 京东商品信息
  * @method JokeQuery jokeQuery() 根据时间戳返回该时间点前或后的笑话列表
  * @method JokeLatest jokeLatest() 获取最新的笑话
  * @method JokeRand jokeRand() 随机获取笑话
@@ -3064,10 +2869,11 @@ class XnbIndex extends Request
  * @method PetIndex petIndex() 宠物大全
  * @method PostcodeQuery postcodeQuery() 通过邮编查询对应的地名
  * @method PostcodeSearch postcodeSearch() 根据相关条件查询符合条件地区的邮编
- * @method PostcodePcd postcodePcd() 根据相关条件查询符合条件地区的邮编
+ * @method PostcodePcd postcodePcd() 返回省份、城市、地区（县）关联的列表
  * @method PostcodeZone postcodeZone() 全国行政区查询,支持省、市、区（乡镇）、街道。最大4级
  * @method QrcodeIndex qrcodeIndex() 根据传递参数实现二维码生成
  * @method QrcodeCodec qrcodeCodec() 二维码解码
+ * @method RceDetect rceDetect() 全栈式风控引擎
  * @method RumourIndex rumourIndex() 谣言识别
  * @method SecondhandCarBrand secondhandCarBrand() 返回车辆品牌所有列表
  * @method SecondhandCarFamily secondhandCarFamily() 指定品牌全部车系列表
@@ -3075,7 +2881,6 @@ class XnbIndex extends Request
  * @method SecondhandCarProvince secondhandCarProvince() 估值支持的省份
  * @method SecondhandCarCity secondhandCarCity() 估值支持的城市
  * @method SecondhandCarQuery secondhandCarQuery() 二手车估值
- * @method ShopSnap shopSnap() 拍照购
  * @method SmsSend smsSend() 发送短信
  * @method SmsQueryStatus smsQueryStatus() 查询发送状态
  * @method SmsAddSign smsAddSign() 添加签名
@@ -3086,20 +2891,8 @@ class XnbIndex extends Request
  * @method SmsQueryTemplate smsQueryTemplate() 获取模板
  * @method SmsModifyTemplate smsModifyTemplate() 修改模板
  * @method SmsDeleteTemplate smsDeleteTemplate() 删除模板
- * @method SpringTravelCitys springTravelCitys() 支持城市清单查询
- * @method SpringTravelQuery springTravelQuery() 根据出入城市，查询出行防疫政策
- * @method SpringTravelHsjg springTravelHsjg() 根据城市ID查询核酸检测机构,数据来源卫健委发布整理,更新同步可能有延迟,具体以实际为准.
- * @method SpringTravelRisk springTravelRisk() 全国中高风险地区查询
  * @method StarIndex starIndex() 明星百科档案
  * @method SurnameIndex surnameIndex() 姓氏起源
- * @method TaobaoDetail taobaoDetail() 淘宝商品信息
- * @method TaobaoItem taobaoItem() 淘宝商品信息详情版
- * @method TaobaoInfo taobaoInfo() 淘宝商品信息轻量版
- * @method TaobaoGood taobaoGood() 淘宝商品信息V2版
- * @method TaobaoSale taobaoSale() 淘宝天猫商品销量
- * @method TaobaoImage taobaoImage() 淘宝商品详情图片
- * @method TaobaoShop taobaoShop() 获取卖家店铺的基本信息
- * @method TaobaoAlibabaInfo taobaoAlibabaInfo() 阿里巴巴商品信息
  * @method TaobaokeQuery taobaokeQuery() 淘口令解析api接口
  * @method TaobaokeCheckOrder taobaokeCheckOrder() 淘宝客订单号检测接口,检测是否使用了淘客下单
  * @method TelecomQuery telecomQuery() 手机实名认证
@@ -3144,20 +2937,16 @@ class XnbIndex extends Request
  * @method WeatherCityList weatherCityList() 查询当前支持的城市列表及城市ID（可以一次性读取保存）
  * @method WebsiteBeian websiteBeian() 网站备案查询
  * @method WebsiteQq websiteQq() 腾讯域名检测
- * @method WebsiteCheatlink websiteCheatlink() 恶意链接检测
- * @method WebsiteCheatip websiteCheatip() 恶意IP检测
  * @method WebsiteAntispam websiteAntispam() 文本内容审核
  * @method WebsiteAdreview websiteAdreview() 广告法违禁词汇
  * @method WebsiteImgcensor websiteImgcensor() 图片内容审核
- * @method WebsiteSurl websiteSurl() 防封短网址生成
- * @method WebsiteShorturl websiteShorturl() 短网址转换
  * @method WebsiteHttps websiteHttps() HTTPS检测
  * @method WebsiteBaidu websiteBaidu() 百度收录量
  * @method WebsiteSogou websiteSogou() 搜狗收录量
  * @method WebsiteSo websiteSo() 360收录量
  * @method WebsiteIpv6 websiteIpv6() ipv6检测
  * @method WebsiteDomain websiteDomain() 查询域名信息
- * @method WebsiteIp websiteIp() 查询IP地址信息
+ * @method WebsiteIp websiteIp() IP地址库查询接口，根据IP地址或经纬度查询归属地/州/国家/省市区/经纬度及网络运营商ISP等信息
  * @method WebsiteWabeian websiteWabeian() 网安备案查询
  * @method WebsiteTdk websiteTdk() 网站TDK信息
  * @method WebsiteIcp websiteIcp() ICP域名备案查询
@@ -3168,7 +2957,6 @@ class XnbIndex extends Request
  * @method WebsiteTop websiteTop() 网站排行榜
  * @method WebsiteHtmlpic websiteHtmlpic() 抽取网页图片
  * @method WebsiteHtmltext websiteHtmltext() 获取网页文章/新闻全文内容
- * @method WebsiteUrl2pic websiteUrl2pic() 网址转换为图片及PDF
  * @method WechatChoice wechatChoice() 微信公众号精选文章
  * @method WechatSearch wechatSearch() 微信文章搜索
  * @method WechatLink wechatLink() 微信临时链接转为永久链接
@@ -3199,7 +2987,6 @@ class XnbIndex extends Request
  * @method XinhuaQueryid xinhuaQueryid() 根据接口列表返回的汉字id，查询汉字完整信息
  * @method XinhuaResemble xinhuaResemble() 查询词语的同义词、反义词。
  * @method XinhuaConvertPy xinhuaConvertPy() 汉字转拼音
- * @method XnbIndex xnbIndex() 数字BTC,ETH,LTC地址
  */
 trait DefaultRequests
 {
