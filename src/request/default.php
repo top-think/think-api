@@ -648,6 +648,22 @@ class GoldBank extends Request
 }
 
 /**
+ * @method $this withService($value)
+ * @method $this withContent($value)
+ */
+class GreenText extends Request
+{
+}
+
+/**
+ * @method $this withService($value)
+ * @method $this withImageUrl($value)
+ */
+class GreenImage extends Request
+{
+}
+
+/**
  * @method $this withDirector($value)
  */
 class GstoreMovieByDirector extends Request
@@ -2744,6 +2760,8 @@ class XinhuaConvertPy extends Request
  * @method GoldQuery goldQuery() 上海黄金交易所 2分钟更新一次
  * @method GoldFuture goldFuture() 上海期货交易所 2分钟更新一次
  * @method GoldBank goldBank() 纸黄金
+ * @method GreenText greenText() 文本审核增强版
+ * @method GreenImage greenImage() 图片审核增强版
  * @method GstoreMovieByDirector gstoreMovieByDirector() 根据导演查找电影
  * @method GstoreMovieByActors gstoreMovieByActors() 根据演员查找电影
  * @method GstoreSymptom gstoreSymptom() 查询某个疾病的所有症状
