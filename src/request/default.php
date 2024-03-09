@@ -1824,6 +1824,17 @@ class SmsSend extends Request
 }
 
 /**
+ * @method $this withSignId($value)
+ * @method $this withTemplateId($value)
+ * @method $this withPhone($value)
+ * @method $this withParams($value)
+ */
+class SmsBatchSend extends Request
+{
+    public $uri = 'sms/batch_send';
+}
+
+/**
  * @method $this withId($value)
  */
 class SmsQueryStatus extends Request
@@ -1869,8 +1880,17 @@ class SmsDeleteSign extends Request
 }
 
 /**
+ * @method $this withId($value)
+ */
+class SmsQueryTemplate extends Request
+{
+    public $uri = 'sms/query_template';
+}
+
+/**
  * @method $this withName($value)
  * @method $this withSignId($value)
+ * @method $this withType($value)
  * @method $this withContent($value)
  * @method $this withRemark($value)
  */
@@ -1881,16 +1901,9 @@ class SmsAddTemplate extends Request
 
 /**
  * @method $this withId($value)
- */
-class SmsQueryTemplate extends Request
-{
-    public $uri = 'sms/query_template';
-}
-
-/**
- * @method $this withId($value)
  * @method $this withName($value)
  * @method $this withSignId($value)
+ * @method $this withType($value)
  * @method $this withContent($value)
  * @method $this withRemark($value)
  */
@@ -2900,13 +2913,14 @@ class XinhuaConvertPy extends Request
  * @method SecondhandCarCity secondhandCarCity() 估值支持的城市
  * @method SecondhandCarQuery secondhandCarQuery() 二手车估值
  * @method SmsSend smsSend() 发送短信
+ * @method SmsBatchSend smsBatchSend() 群发短信
  * @method SmsQueryStatus smsQueryStatus() 查询发送状态
  * @method SmsAddSign smsAddSign() 添加签名
  * @method SmsQuerySign smsQuerySign() 获取签名
  * @method SmsModifySign smsModifySign() 修改签名
  * @method SmsDeleteSign smsDeleteSign() 删除签名
- * @method SmsAddTemplate smsAddTemplate() 添加模板
  * @method SmsQueryTemplate smsQueryTemplate() 获取模板
+ * @method SmsAddTemplate smsAddTemplate() 添加模板
  * @method SmsModifyTemplate smsModifyTemplate() 修改模板
  * @method SmsDeleteTemplate smsDeleteTemplate() 删除模板
  * @method StarIndex starIndex() 明星百科档案
