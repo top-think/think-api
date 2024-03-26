@@ -46,13 +46,18 @@ abstract class Request
         }
     }
 
-    public function request()
+    /**
+     * @param $info bool 获取接口信息
+     */
+    public function request($info = false)
     {
         $this->resolveOptions();
         $this->resolveUri();
 
+        $method = $info ? 'OPTIONS' : $this->method;
+
         try {
-            return $this->group->request($this->method, $this->uri, $this->options);
+            return $this->group->request($method, $this->uri, $this->options);
         } catch (RequestException $e) {
             if ($e->hasResponse()) {
                 $response = $e->getResponse();
