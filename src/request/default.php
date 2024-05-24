@@ -648,6 +648,15 @@ class GreenText extends Request
 
 /**
  * @method $this withService($value)
+ * @method $this withContent($value)
+ */
+class GreenTextAdvance extends Request
+{
+    public $uri = 'green/text_advance';
+}
+
+/**
+ * @method $this withService($value)
  * @method $this withImageUrl($value)
  */
 class GreenImage extends Request
@@ -1758,6 +1767,36 @@ class RumourIndex extends Request
 {
 }
 
+/**
+ * @method $this withQ($value)
+ * @method $this withGl($value)
+ * @method $this withHl($value)
+ * @method $this withNum($value)
+ */
+class SearchWeb extends Request
+{
+}
+
+/**
+ * @method $this withQ($value)
+ * @method $this withGl($value)
+ * @method $this withHl($value)
+ * @method $this withNum($value)
+ */
+class SearchImage extends Request
+{
+}
+
+/**
+ * @method $this withQ($value)
+ * @method $this withGl($value)
+ * @method $this withHl($value)
+ * @method $this withNum($value)
+ */
+class SearchNews extends Request
+{
+}
+
 class SecondhandCarBrand extends Request
 {
     public $uri = 'secondhand_car/brand';
@@ -2737,6 +2776,7 @@ class XinhuaConvertPy extends Request
  * @method GoldFuture goldFuture() 期货查询
  * @method GoldBank goldBank() 纸黄金
  * @method GreenText greenText() 文本审核增强版
+ * @method GreenTextAdvance greenTextAdvance() 文本审核增强版Plus
  * @method GreenImage greenImage() 图片审核增强版
  * @method GstoreMovieByDirector gstoreMovieByDirector() 根据导演查找电影
  * @method GstoreMovieByActors gstoreMovieByActors() 根据演员查找电影
@@ -2869,6 +2909,9 @@ class XinhuaConvertPy extends Request
  * @method QrcodeCodec qrcodeCodec() 二维码解码
  * @method RceDetect rceDetect() 全栈式风控引擎
  * @method RumourIndex rumourIndex() 谣言鉴别
+ * @method SearchWeb searchWeb() 网页搜索
+ * @method SearchImage searchImage() 图片搜索
+ * @method SearchNews searchNews() 新闻搜索
  * @method SecondhandCarBrand secondhandCarBrand() 返回车辆品牌所有列表
  * @method SecondhandCarFamily secondhandCarFamily() 指定品牌全部车系列表
  * @method SecondhandCarModel secondhandCarModel() 指定车系具体车型列表
